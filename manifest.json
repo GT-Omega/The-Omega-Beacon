@@ -125,6 +125,36 @@
       "fileID": 4944325,
       "projectID": 416294,
       "required": true
+    },
+    {
+      "fileID": 334853,
+      "projectID": 4964550,
+      "required": true
+    },
+    {
+      "fileID": 5299719,
+      "projectID": 654373,
+      "required": true
+    },
+    {
+      "fileID": 5547281,
+      "projectID": 927564,
+      "required": true
+    },
+    {
+      "fileID": 4680832,
+      "projectID": 635427,
+      "required": true
+    },
+    {
+      "fileID": 4635878,
+      "projectID": 232131,
+      "required": true
+    },
+    {
+      "fileID": 5467600,
+      "projectID": 531761,
+      "required": true
     }
   ],
   "manifestType": "minecraftModpack",
