@@ -24,13 +24,9 @@ config/modernfix-mixins.properties
 config/ftbbackups2.json
 config/spark/tmp
 config/spark/activity.json
-config/voicechat/username-cache.json
-config/minihud/*
 config/embeddium-fingerprint.json
 config/chiselsandbits-client.toml
 config/chiselsandbits-common.toml
-config/defaultworldtype/world-presets.txt
-config/jecalculation/record.json
 config/embeddium++.toml
 config/embeddium++.toml
 config/emi.css
