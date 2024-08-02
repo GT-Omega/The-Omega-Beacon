@@ -1,1 +1,129 @@
-{"author":"","files":[{"fileID":5506346,"projectID":892005,"required":true},{"fileID":5444207,"projectID":912469,"required":true},{"fileID":5226922,"projectID":957920,"required":true},{"fileID":5217955,"projectID":459929,"required":true},{"fileID":5565729,"projectID":223794,"required":true},{"fileID":5137938,"projectID":419699,"required":true},{"fileID":4973441,"projectID":348521,"required":true},{"fileID":5367944,"projectID":309927,"required":true},{"fileID":5566632,"projectID":908741,"required":true},{"fileID":5497473,"projectID":580555,"required":true},{"fileID":4810975,"projectID":429235,"required":true},{"fileID":5378090,"projectID":314906,"required":true},{"fileID":4896152,"projectID":410811,"required":true},{"fileID":5567591,"projectID":404465,"required":true},{"fileID":5543955,"projectID":289412,"required":true},{"fileID":5267190,"projectID":404468,"required":true},{"fileID":4834403,"projectID":622737,"required":true},{"fileID":5493660,"projectID":890405,"required":true},{"fileID":5535605,"projectID":1028068,"required":true},{"fileID":4719290,"projectID":688367,"required":true},{"fileID":5569652,"projectID":790626,"required":true},{"fileID":5350440,"projectID":576589,"required":true}],"manifestType":"minecraftModpack","manifestVersion":1,"minecraft":{"modLoaders":[{"id":"forge-47.3.5","primary":true}],"version":"1.20.1"},"name":"GTΩ","overrides":"overrides","version":"1.0.0"}
+{
+  "author": "",
+  "files": [
+    {
+      "fileID": 5506346,
+      "projectID": 892005,
+      "required": true
+    },
+    {
+      "fileID": 5444207,
+      "projectID": 912469,
+      "required": true
+    },
+    {
+      "fileID": 5226922,
+      "projectID": 957920,
+      "required": true
+    },
+    {
+      "fileID": 5217955,
+      "projectID": 459929,
+      "required": true
+    },
+    {
+      "fileID": 5565729,
+      "projectID": 223794,
+      "required": true
+    },
+    {
+      "fileID": 5137938,
+      "projectID": 419699,
+      "required": true
+    },
+    {
+      "fileID": 4973441,
+      "projectID": 348521,
+      "required": true
+    },
+    {
+      "fileID": 5367944,
+      "projectID": 309927,
+      "required": true
+    },
+    {
+      "fileID": 5566632,
+      "projectID": 908741,
+      "required": true
+    },
+    {
+      "fileID": 5497473,
+      "projectID": 580555,
+      "required": true
+    },
+    {
+      "fileID": 4810975,
+      "projectID": 429235,
+      "required": true
+    },
+    {
+      "fileID": 5378090,
+      "projectID": 314906,
+      "required": true
+    },
+    {
+      "fileID": 4896152,
+      "projectID": 410811,
+      "required": true
+    },
+    {
+      "fileID": 5567591,
+      "projectID": 404465,
+      "required": true
+    },
+    {
+      "fileID": 5543955,
+      "projectID": 289412,
+      "required": true
+    },
+    {
+      "fileID": 5267190,
+      "projectID": 404468,
+      "required": true
+    },
+    {
+      "fileID": 4834403,
+      "projectID": 622737,
+      "required": true
+    },
+    {
+      "fileID": 5493660,
+      "projectID": 890405,
+      "required": true
+    },
+    {
+      "fileID": 5535605,
+      "projectID": 1028068,
+      "required": true
+    },
+    {
+      "fileID": 4719290,
+      "projectID": 688367,
+      "required": true
+    },
+    {
+      "fileID": 5569652,
+      "projectID": 790626,
+      "required": true
+    },
+    {
+      "fileID": 5350440,
+      "projectID": 576589,
+      "required": true
+    }
+  ],
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "minecraft": {
+    "modLoaders": [
+      {
+        "id": "forge-47.3.5",
+        "primary": true
+      }
+    ],
+    "version": "1.20.1"
+  },
+  "name": "GTΩ",
+  "overrides": "overrides",
+  "version": "1.0.0"
+}
