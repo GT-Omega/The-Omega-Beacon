@@ -1,0 +1,73 @@
+ServerEvents.recipes(event => {
+
+//how do i make this as mean as possible :tr:
+event.shaped(
+    'thermal:machine_furnace',
+        [   ' A ', 
+            'BCB', 
+            'DED'
+        ],
+        {
+
+            A:['gtceu:vacuum_tube'],
+            B:['minecraft:bricks'],
+            C:['gtceu:ulv_machine_hull'],
+            D:['gtceu:small_iron_gear'],
+            E:['thermal:rf_coil']
+
+        }
+
+    )
+
+    event.shaped(
+        'gtceu:ulv_machine_hull', 
+    [ 'FGF',
+      'HIH',
+      '   ',  
+    ],
+    {
+
+        F:['gtceu:tin_plate'],
+        G:['gtceu:iron_plate'],
+        H:['gtceu:red_alloy_single_wire'],
+        I:['gtceu:ulv_machine_casing']
+
+
+    }
+
+    )
+    event.shaped(
+        'gtceu:ulv_machine_casing',
+        ['KKK',
+         'KJK',
+         'KKK',  
+        ],
+        {
+        K:['gtceu:iron_plate'],
+        J:['#forge:tools/wrench'],
+
+        }
+    
+    )
+
+    event.shaped(
+        'thermal:rf_coil',
+        [
+
+            'LLL',
+            'LML',
+            'LLL',
+
+        ],
+        {
+
+            L : ['gtceu:fine_red_alloy_wire'],
+            M :  ['gtceu:iron_rod']
+
+        }
+        
+    
+    
+    )
+
+})
