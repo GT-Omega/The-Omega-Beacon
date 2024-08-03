@@ -1,5 +1,5 @@
 {
-  "author": "",
+  "author": "WithersChat, SpicerSpace153, JuiceyBeans",
   "files": [
     {
       "fileID": 5506346,
@@ -57,6 +57,11 @@
       "required": true
     },
     {
+      "fileID": 4979130,
+      "projectID": 302113,
+      "required": true
+    },
+    {
       "fileID": 5566632,
       "projectID": 908741,
       "required": true
@@ -107,6 +112,11 @@
       "required": true
     },
     {
+      "fileID": 5101366,
+      "projectID": 238222,
+      "required": true
+    },
+    {
       "fileID": 5454840,
       "projectID": 238086,
       "required": true
@@ -127,7 +137,7 @@
       "required": true
     },
     {
-      "fileID": 5569652,
+      "fileID": 5512356,
       "projectID": 790626,
       "required": true
     },
@@ -163,7 +173,7 @@
     ],
     "version": "1.20.1"
   },
-  "name": "GTΩ",
+  "name": "GtΩ",
   "overrides": "overrides",
   "version": "1.0.0"
 }
