@@ -1,5 +1,5 @@
 {
-  "author": "WithersChat, SpicerSpace153, JuiceyBeans",
+  "author": "WithersChat, SpicierSpace153, JuiceyBeans",
   "files": [
     {
       "fileID": 5506346,
@@ -164,6 +164,16 @@
     {
       "fileID": 5547281,
       "projectID": 927564,
+      "required": true
+    },
+    {
+      "fileID": 4646682,
+      "projectID": 250398,
+      "required": true
+    },
+    {
+      "fileID": 5284015,
+      "projectID": 858542,
       "required": true
     }
   ],
