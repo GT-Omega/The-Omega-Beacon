@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "prelv_memories_of_a_lost_world"
+	group: ""
+	id: "258049605AADE49B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "16835C793DCA2865"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "6A62C9698484D202"
+			title: "A New Beginning"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Pre-LV: Ruins of a Lost World"
+}
