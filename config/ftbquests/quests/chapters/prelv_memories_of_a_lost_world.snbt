@@ -6,17 +6,87 @@
 	id: "258049605AADE49B"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "16835C793DCA2865"
-		shape: "gear"
-		size: 2.0d
-		tasks: [{
-			id: "6A62C9698484D202"
-			title: "A New Beginning"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: [
+				"[Blah blah welcome message]"
+				""
+				"[Find lore reason for the hammer]"
+			]
+			icon: "gtceu:iron_gear"
+			id: "16835C793DCA2865"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "6A62C9698484D202"
+				title: "A New Beginning"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16835C793DCA2865"]
+			icon: "gtceu:yellow_limonite_ore"
+			id: "37153A9CD14B559E"
+			tasks: [
+				{
+					id: "4CA3DC159247FD19"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "6B56F5B6A1F9B50E"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "42C02FE0D4C0A6FC"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+				{
+					id: "0655B1EB432F8943"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			title: "Resources From The Deep"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["16835C793DCA2865"]
+			icon: "gtceu:steel_ingot"
+			id: "3BEB950475604199"
+			tasks: [
+				{
+					id: "6CA31851DBD76329"
+					item: "gtceu:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "541A00F305AB7344"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			title: "Resources From The Ruins"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["16835C793DCA2865"]
+			id: "1ECC23B0EF758B6E"
+			tasks: [{
+				id: "544304970D94A9C1"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			title: "Resources From The Land"
+			x: 0.0d
+			y: 2.5d
+		}
+	]
 	title: "Pre-LV: Ruins of a Lost World"
 }
