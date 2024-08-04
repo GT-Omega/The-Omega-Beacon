@@ -34,7 +34,7 @@ const machines = ['thermal:machine_sawmill',
                     'thermal:device_fisher',
                     'thermal:device_rock_gen',
                     'thermal:device_xp_condenser',
-                    'thermal_device_potion_diffuser'
+                    'thermal:device_potion_diffuser'
 ]
 const randoms = ['thermal:apatite',
                     'thermal:cinnabar',
