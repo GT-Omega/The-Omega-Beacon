@@ -1,3 +1,5 @@
+//earlygame gregified recipes and reworked ulv frames
+
 ServerEvents.recipes(event => {
     event.shaped(
         'gtceu:vacuum_tube',
@@ -16,7 +18,7 @@ ServerEvents.recipes(event => {
 
 
         }
-    )
+    ).id('gtceu:shaped/vacuum_tube')
   
     event.shaped(
         'gtceu:ulv_machine_hull', 
@@ -34,7 +36,7 @@ ServerEvents.recipes(event => {
 
     }
 
-    )
+    ).id('gtceu:shaped/ulv_machine_hull')
     event.shaped(
         'gtceu:ulv_machine_casing',
         ['KKK',
@@ -47,8 +49,26 @@ ServerEvents.recipes(event => {
 
         }
     
-    )
+        //rf coil stuff
+    
+    ).id('gtceu:shaped/ulv_machine_casing')
 
+    event.shaped(
+        'gtceu:ulv_voltage_coil',
+        [
+            'NNN',
+            'NON',
+            'NNN',
+       ],
+       {
+
+            N:['gtceu:fine_lead_wire'],
+            O:[['gtceu:copper_rod']]
+
+       }
+    ).id('gtceu:shaped/ulv_voltage_cell')
+    
+    
     event.shaped(
         'thermal:rf_coil',
         [
@@ -67,21 +87,10 @@ ServerEvents.recipes(event => {
         
     
     
-    )
-    event.shaped(
-        'gtceu:ulv_voltage_coil',
-        [
-            'NNN',
-            'NON',
-            'NNN',
-       ],
-       {
-
-            N:['gtceu:fine_lead_wire'],
-            O:[['gtceu:copper_rod']]
-
-       }
-    )
+    ).id('thermal:rf_coil')
+   
+    
+    
     //ULV components cheaper
     event.shaped(
         'ulvcovm:ulv_electric_motor',

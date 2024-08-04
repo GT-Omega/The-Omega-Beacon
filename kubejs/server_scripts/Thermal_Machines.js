@@ -17,10 +17,8 @@ event.shaped(
 
         }
 
-    )
+    ).id('thermal:machine_furnace')
 
-        //I think this might be too expensive, 22 iron 12 copper 4 tin 12 red alloy and 18 lead is alot. 
-    //Specifically the lead cause 18 is alot might want to change the coil recipe maybe idk im tired 
 
 event.shaped(
     'thermal:machine_pulverizer',
@@ -40,7 +38,7 @@ event.shaped(
         J:['thermal:rf_coil']
 
     }
-)
+).id('thermal:machine_pulverizer')
 
 
 //im an evil person 
@@ -61,5 +59,28 @@ event.shaped(
         N: 'gtceu:small_copper_gear',
         O: 'thermal:rf_coil'
     }
-)
+).id('thermal:machine_smelter')
+
+//nah the last was tame THIS TIME I AM THE VILLAN one stack of iron for dis bad boy btw
+event.shaped(
+    'thermal:machine_press',
+        [
+
+            ' P ',
+            'QRQ',
+            'STU',
+
+        ],
+        {
+
+          P:['minecraft:anvil'],
+         Q:['gtceu:vacuum_tube'],
+          R:'gtceu:ulv_machine_hull',
+          S:['ulvcovm:ulv_electric_motor'],
+          T:'thermal:rf_coil',
+          U:'ulvcovm:ulv_electric_piston'
+
+        }
+    
+    ).id('thermal:machine_press')
 })
