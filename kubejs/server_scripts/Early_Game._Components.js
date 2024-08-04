@@ -1,5 +1,24 @@
 ServerEvents.recipes(event => {
     event.shaped(
+        'gtceu:vacuum_tube',
+        [
+
+            'ABA',
+            'CCC',
+            '   '
+
+        ],
+        {
+
+            A:['gtceu:iron_bolt'],
+            B:['gtceu:glass_tube'],
+            C:['gtceu:copper_single_wire']
+
+
+        }
+    )
+  
+    event.shaped(
         'gtceu:ulv_machine_hull', 
     [ 'FGF',
       'HIH',
@@ -49,5 +68,20 @@ ServerEvents.recipes(event => {
     
     
     )
+    event.shaped(
+        'gtceu:ulv_voltage_coil',
+        [
+            'NNN',
+            'NON',
+            'NNN',
+       ],
+       {
+
+            N:['gtceu:fine_lead_wire'],
+            O:['gtceu:fine_lead_wire']
+
+       }
+    )
+
 
 })
