@@ -1,24 +1,4 @@
 ServerEvents.recipes(event => {
-
-//how do i make this as mean as possible :tr:
-event.shaped(
-    'thermal:machine_furnace',
-        [   ' A ', 
-            'BCB', 
-            'DED'
-        ],
-        {
-
-            A:['gtceu:vacuum_tube'],
-            B:['minecraft:bricks'],
-            C:['gtceu:ulv_machine_hull'],
-            D:['gtceu:small_iron_gear'],
-            E:['thermal:rf_coil']
-
-        }
-
-    )
-
     event.shaped(
         'gtceu:ulv_machine_hull', 
     [ 'FGF',
