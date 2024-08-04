@@ -42,6 +42,7 @@ event.shaped(
 
 
 //im an evil person 
+//im surprised that the player can stand this one, its akin to walking into a induction smelter naked and burning to a crisp.
 event.shaped(
     'thermal:machine_smelter',
     [
@@ -61,7 +62,9 @@ event.shaped(
     }
 ).id('thermal:machine_smelter')
 
-//nah the last was tame THIS TIME I AM THE VILLAN one stack of iron for dis bad boy btw
+//nah the last one was tame THIS TIME I AM THE VILLAN  
+//this recipe should make the player want to shove themself into a forge hammer.
+//id rather spend eternity eating shards of glass then to actually do this recipe
 event.shaped(
     'thermal:machine_press',
         [
