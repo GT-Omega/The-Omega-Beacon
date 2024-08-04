@@ -1,0 +1,145 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thermal_come_up_with_name_later"
+	group: ""
+	icon: "thermal:machine_frame"
+	id: "6902554B26B9C1F4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["467C926B36AED958"]
+			id: "6EA8373A86EE56EB"
+			tasks: [{
+				id: "4BCE6C196502CAEB"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			description: ["insert cool description about how to craft tools blah blah blah"]
+			id: "467C926B36AED958"
+			tasks: [{
+				id: "596F017972512FC8"
+				item: {
+					Count: 1
+					id: "gtceu:hv_sterling_silver_wrench"
+					tag: {
+						Charge: 2147483647L
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							Mode: 2b
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 767
+							ToolSpeed: 13.0f
+						}
+						HideFlags: 2
+						MaxCharge: 2147483647L
+					}
+				}
+				type: "item"
+			}]
+			title: "average gt tools quest lmao"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			description: ["all ma homies have power problems"]
+			id: "32073F781F319F3C"
+			tasks: [{
+				id: "573AB0C08754D70D"
+				item: "gtceu:tantalum_capacitor"
+				type: "item"
+			}]
+			title: "power quest"
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["32073F781F319F3C"]
+			id: "3EDC10CB6A49D8AD"
+			tasks: [{
+				id: "3A01F938E7B1120C"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			title: "using capacitors"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"6EA8373A86EE56EB"
+				"3EDC10CB6A49D8AD"
+			]
+			id: "72E6CC33F218BB29"
+			tasks: [{
+				id: "61908DEB542FC5B9"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			title: "make da thing in the quest"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72E6CC33F218BB29"]
+			description: ["go break some buildings or smth idgaf"]
+			id: "0CF82A625948170D"
+			tasks: [{
+				id: "7CFBCBA083AEFC53"
+				item: "gtceu:light_concrete"
+				type: "item"
+			}]
+			title: "finding some concrete"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["72E6CC33F218BB29"]
+			id: "394D70C5F1B9C9FF"
+			tasks: [{
+				id: "1241984D22839340"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"48909F0957B44C37"
+				"394D70C5F1B9C9FF"
+			]
+			id: "345866892A28EE70"
+			tasks: [{
+				id: "3B23C92F063A9C4D"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"394D70C5F1B9C9FF"
+				"0CF82A625948170D"
+			]
+			id: "48909F0957B44C37"
+			tasks: [{
+				id: "2773DF5E07E9D653"
+				item: "gtceu:fireclay_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+	]
+	title: "Thermal (come up with name later)"
+}

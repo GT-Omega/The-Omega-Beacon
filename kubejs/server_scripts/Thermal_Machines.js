@@ -35,10 +35,31 @@ event.shaped(
 
         F:['ulvcovm:ulv_electric_piston'],
         G:['gtceu:vacuum_tube'],
-        H:[['gtceu:ulv_machine_hull']],
+        H:['gtceu:ulv_machine_hull'],
         I:['gtceu:small_copper_gear'],
         J:['thermal:rf_coil']
 
+    }
+)
+
+
+//im an evil person 
+event.shaped(
+    'thermal:machine_smelter',
+    [
+
+        ' K ',
+        'LML',
+        'NON',
+
+    ],
+    {
+
+        K:'thermal:machine_furnace',
+        L:'gtceu:firebricks',
+        M:'gtceu:ulv_machine_hull',
+        N: 'gtceu:small_copper_gear',
+        O: 'thermal:rf_coil'
     }
 )
 })

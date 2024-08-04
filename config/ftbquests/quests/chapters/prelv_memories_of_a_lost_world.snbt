@@ -70,6 +70,11 @@
 					item: "gtceu:red_alloy_ingot"
 					type: "item"
 				}
+				{
+					id: "4078AB3C3C9437D9"
+					item: "gtceu:lead_ingot"
+					type: "item"
+				}
 			]
 			title: "Resources From The Ruins"
 			x: 1.5d
