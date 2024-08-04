@@ -2,6 +2,8 @@
 
 ServerEvents.recipes(event => {
 event.shaped(
+//i'd rather have my blood sucked out by leaches. Then craft one more of you.
+//
     'thermal:machine_furnace',
         [   ' A ', 
             'BCB', 
@@ -10,7 +12,7 @@ event.shaped(
         {
 
             A:['gtceu:vacuum_tube'],
-            B:['minecraft:bricks'],
+            B:['gtceu:coke_oven_bricks'],
             C:['gtceu:ulv_machine_hull'],
             D:['gtceu:small_copper_gear'],
             E:['thermal:rf_coil']

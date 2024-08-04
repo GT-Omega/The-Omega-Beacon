@@ -52,6 +52,11 @@
       "required": true
     },
     {
+      "fileID": 5374122,
+      "projectID": 69162,
+      "required": true
+    },
+    {
       "fileID": 5367944,
       "projectID": 309927,
       "required": true
@@ -127,6 +132,11 @@
       "required": true
     },
     {
+      "fileID": 5002992,
+      "projectID": 421694,
+      "required": true
+    },
+    {
       "fileID": 5404565,
       "projectID": 570630,
       "required": true
@@ -162,28 +172,23 @@
       "required": true
     },
     {
+      "fileID": 5372749,
+      "projectID": 69163,
+      "required": true
+    },
+    {
+      "fileID": 5443583,
+      "projectID": 222880,
+      "required": true
+    },
+    {
+      "fileID": 5323766,
+      "projectID": 984851,
+      "required": true
+    },
+    {
       "fileID": 5547281,
       "projectID": 927564,
-      "required": true
-    },
-    {
-      "fileID": 4646682,
-      "projectID": 250398,
-      "required": true
-    },
-    {
-      "fileID": 5284015,
-      "projectID": 858542,
-      "required": true
-    },
-    {
-      "fileID": 5302292,
-      "projectID": 930207,
-      "required": true
-    },
-    {
-      "fileID": 984851,
-      "projectID": 5323766,
       "required": true
     }
   ],
@@ -198,7 +203,7 @@
     ],
     "version": "1.20.1"
   },
-  "name": "GtΩ",
+  "name": "gt-omega",
   "overrides": "overrides",
   "version": "1.0.0"
 }
