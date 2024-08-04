@@ -67,7 +67,7 @@
 				}
 				{
 					id: "541A00F305AB7344"
-					item: "minecraft:redstone"
+					item: "gtceu:red_alloy_ingot"
 					type: "item"
 				}
 			]
