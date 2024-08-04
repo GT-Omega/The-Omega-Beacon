@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
        {
 
             N:['gtceu:fine_lead_wire'],
-            O:['gtceu:fine_lead_wire']
+            O:[['gtceu:copper_rod']]
 
        }
     )
