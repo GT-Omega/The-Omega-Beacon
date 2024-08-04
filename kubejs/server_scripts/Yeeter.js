@@ -9,7 +9,8 @@ let yeet = (yeeted) => {
 }
 
 //The following lines take Thermal Series, grab it by the shoulders and shove it head first into a Large Maceration Tower
-//before plugging the tower into the Dyson Swarm's power grid
+//before plugging the tower into the Dyson Swarm's power grid, filtering its remains in an Ore Washer
+//and processing the rest in a Thermal Centrifuge
 
 Ingredient.of(/thermal:.*_(ore|sand|ingot|block|nugget|coin|dust|plate|gear)$/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:raw_.*/).itemIds.forEach(item => yeet(item))
@@ -26,10 +27,14 @@ const machines = ['thermal:machine_sawmill',
                     'thermal:machine_crystallizer',
                     'thermal:machine_crafter',
                     'thermal:tinker_bench',
+                    'thermal:energy_cell',
+                    'thermal:energy_cell_frame',
                     'thermal:fluid_cell',
-                    'thermal_device_tree_extractor',
-                    'thermal_device_fisher',
-                    'thermal_device_potion_diffuser'
+                    'thermal:device_tree_extractor',
+                    'thermal:device_fisher',
+                    'thermal:device_rock_gen',
+                    'thermal:device_xp_condenser',
+                    'thermal:device_potion_diffuser'
 ]
 const randoms = ['thermal:apatite',
                     'thermal:cinnabar',
@@ -46,6 +51,7 @@ const randoms = ['thermal:apatite',
                     'thermal:ruby',
                     'thermal:sapphire',
                     'thermal:rf_potato',
+                    'thermal:xp_crystal',
                     'thermal:lock',
                     'thermal:satchel',
                     'thermal:detonator',
