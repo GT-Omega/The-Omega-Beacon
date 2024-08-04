@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         {
 
             L : ['gtceu:fine_red_alloy_wire'],
-            M :  ['gtceu:iron_rod']
+            M :  ['gtceu:ulv_voltage_coil']
 
         }
         

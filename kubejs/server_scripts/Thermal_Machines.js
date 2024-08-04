@@ -12,17 +12,16 @@ event.shaped(
             A:['gtceu:vacuum_tube'],
             B:['minecraft:bricks'],
             C:['gtceu:ulv_machine_hull'],
-            D:['gtceu:small_iron_gear'],
+            D:['gtceu:small_copper_gear'],
             E:['thermal:rf_coil']
 
         }
 
     )
 
-    //I think this might be too expensive, 22 iron 12 copper 4 tin 12 red alloy and 18 lead is alot. 
+        //I think this might be too expensive, 22 iron 12 copper 4 tin 12 red alloy and 18 lead is alot. 
     //Specifically the lead cause 18 is alot might want to change the coil recipe maybe idk im tired 
-    //and this is exhausting. 
-    // Todo: Get a better sleep schedule
+
 event.shaped(
     'thermal:machine_pulverizer',
     [
@@ -34,10 +33,10 @@ event.shaped(
     ],
     {
 
-        F:['minecraft:piston'],
+        F:['ulvcovm:ulv_electric_piston'],
         G:['gtceu:vacuum_tube'],
         H:[['gtceu:ulv_machine_hull']],
-        I:['gtceu:ulv_voltage_coil'],
+        I:['gtceu:small_copper_gear'],
         J:['thermal:rf_coil']
 
     }
