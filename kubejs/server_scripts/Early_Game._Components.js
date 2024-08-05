@@ -175,6 +175,6 @@ ServerEvents.recipes(event => {
     event.remove('gtceu:shaped/firebricks')
     event.remove('gtceu:shapeless/firebricks')
 	event.recipes.thermal.press(
-	'gtceu:fireclay_dust',
-	'gtceu:firebrick').id('thermal:press/gtceu:firebrick')
+	'gtceu:firebrick',
+	'gtceu:fireclay_dust').id('thermal:press/gtceu:firebrick')
 })
