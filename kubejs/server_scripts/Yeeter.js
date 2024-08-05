@@ -28,7 +28,7 @@ Ingredient.of(/thermal:.*_(ore|sand|ingot|block|nugget|coin|dust|plate|gear|buck
 Ingredient.of(/thermal:raw_.*/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*(rockwool|rubberwood|cast|coin)/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*augment.*/).itemIds.forEach(item => yeet(item))
-const machines = [
+const items = [
                     'thermal:machine_sawmill',
                     'thermal:machine_insolator',
                     'thermal:machine_crucible',
@@ -46,9 +46,7 @@ const machines = [
                     'thermal:device_fisher',
                     'thermal:device_rock_gen',
                     'thermal:device_xp_condenser',
-                    'thermal:device_potion_diffuser'
-]
-const randoms = [
+                    'thermal:device_potion_diffuser',
                     'thermal:apatite',
                     'thermal:cinnabar',
                     'thermal:niter',
@@ -73,8 +71,9 @@ const randoms = [
                     'thermal:phytogro',
                     'thermal:junk_net',
                     'thermal:aquachow',
-                    'thermal:deep_aquachow'
-]
+                    'thermal:deep_aquachow',
+                    'ae2:facade'
+]            
 const fluids = [
                     'thermal:redstone',
                     'thermal:glowstone',
@@ -94,6 +93,5 @@ const fluids = [
                     'cofh_core:experience',
                     'cofh_core:milk'
 ]
-machines.forEach(item => yeet(item))
-randoms.forEach(item => yeet(item))
+items.forEach(item => yeet(item))
 fluids.forEach(fluid => drain(fluid))
