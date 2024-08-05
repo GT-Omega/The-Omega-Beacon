@@ -62,8 +62,8 @@ ServerEvents.recipes(event => {
        ],
        {
 
-            N:['gtceu:fine_lead_wire'],
-            O:[['gtceu:copper_rod']]
+            N:['gtceu:fine_copper_wire'],
+            O:[['gtceu:iron_rod']]
 
        }
     ).id('gtceu:shaped/ulv_voltage_cell')
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
             'TR',
             'MT'
         ],
-        {
+        {   
             T: '#gtceu:circuits/ulv',
             R: 'gtceu:tin_single_wire',
             M: 'ulvcovm:ulv_electric_pump'
