@@ -89,6 +89,10 @@ const fluids = [
                     'thermal:heavy_oil',
                     'thermal:light_oil',
                     'thermal:refined_fuel',
+                    'cofh_core:potion',
+                    'cofh_core:honey',
+                    'cofh_core:experience',
+                    'cofh_core:milk'
 ]
 machines.forEach(item => yeet(item))
 randoms.forEach(item => yeet(item))

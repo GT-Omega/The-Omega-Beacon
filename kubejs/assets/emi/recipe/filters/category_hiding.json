@@ -1,0 +1,11 @@
+{
+    "filters": [
+        {
+            "category": "thermal:bottler"
+        },
+        {
+            "id": "/bucket/",
+            "category": "emi:world_interaction"
+        }
+    ]
+  }
