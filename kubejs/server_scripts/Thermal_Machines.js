@@ -88,4 +88,18 @@ event.shaped(
         }
     
     ).id('thermal:machine_press')
+
+    //firebrick 
+    event.recipes.thermal.press('gtceu:compressed_fireclay', 
+        ['gtceu:fireclay_dust', 'gtceu:ingot_casting_mold'])
+
 })
+
+//add thermal tag to all gtmolds :Tr:
+ServerEvents.tags('item', event =>{
+
+event.add('thermal:crafting/dies','gtceu:ingot_casting_mold')
+
+
+})
+
