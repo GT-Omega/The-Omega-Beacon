@@ -1,10 +1,22 @@
+// Remove and hide items
 let yeet = (yeeted) => {
     ServerEvents.recipes(event => {
         event.remove({ output: yeeted })
     })
     ServerEvents.tags('item', event => {
         event.removeAllTagsFrom(yeeted)
-        event.add('forge:viewers/hidden', yeeted)
+        event.add('c:hidden_from_recipe_viewers', yeeted)
+    })
+}
+
+// Remove and hide fluids
+let drain = (drained) => {
+    ServerEvents.recipes(event => {
+        event.remove({ output: Fluid.of(drained) })
+    })
+    ServerEvents.tags('fluid', event => {
+        event.removeAllTagsFrom(drained)
+        event.add('c:hidden_from_recipe_viewers', drained)
     })
 }
 
@@ -12,11 +24,12 @@ let yeet = (yeeted) => {
 //before plugging the tower into the Dyson Swarm's power grid, filtering its remains in an Ore Washer
 //and processing the rest in a Thermal Centrifuge
 
-Ingredient.of(/thermal:.*_(ore|sand|ingot|block|nugget|coin|dust|plate|gear)$/).itemIds.forEach(item => yeet(item))
+Ingredient.of(/thermal:.*_(ore|sand|ingot|block|nugget|coin|dust|plate|gear|bucket)$/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:raw_.*/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*(rockwool|rubberwood|cast|coin)/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*augment.*/).itemIds.forEach(item => yeet(item))
-const machines = ['thermal:machine_sawmill',
+const machines = [
+                    'thermal:machine_sawmill',
                     'thermal:machine_insolator',
                     'thermal:machine_crucible',
                     'thermal:machine_chiller',
@@ -37,7 +50,8 @@ const machines = ['thermal:machine_sawmill',
                     'thermal:device_xp_condenser',
                     'thermal:device_potion_diffuser'
 ]
-const randoms = ['thermal:apatite',
+const randoms = [
+                    'thermal:apatite',
                     'thermal:cinnabar',
                     'thermal:niter',
                     'thermal:sulfur',
@@ -63,5 +77,21 @@ const randoms = ['thermal:apatite',
                     'thermal:aquachow',
                     'thermal:deep_aquachow'
 ]
+const fluids = [
+                    'thermal:redstone',
+                    'thermal:glowstone',
+                    'thermal:ender',
+                    'thermal:sap',
+                    'thermal:syrup',
+                    'thermal:resin',
+                    'thermal:tree_oil',
+                    'thermal:latex',
+                    'thermal:creosote',
+                    'thermal:crude_oil',
+                    'thermal:heavy_oil',
+                    'thermal:light_oil',
+                    'thermal:refined_fuel',
+]
 machines.forEach(item => yeet(item))
 randoms.forEach(item => yeet(item))
+fluids.forEach(fluid => drain(fluid))
