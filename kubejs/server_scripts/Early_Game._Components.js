@@ -171,5 +171,10 @@ ServerEvents.recipes(event => {
             M: 'ulvcovm:ulv_electric_pump'
         }
     ).id('ulvcovm:shaped/ulv_electric_conveyor')
-
+    
+    event.remove('gtceu:shaped/firebricks')
+    event.remove('gtceu:shapeless/firebricks')
+	event.recipes.thermal.press(
+	'gtceu:fireclay_dust',
+	'gtceu:firebrick').id('thermal:press/gtceu:firebrick')
 })
