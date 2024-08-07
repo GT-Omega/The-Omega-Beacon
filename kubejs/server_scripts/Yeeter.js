@@ -1,7 +1,7 @@
 // Remove ONLY the recipe for an item
 let removeRecipe = (removed) => {
     ServerEvents.recipes(event => {
-        event.remove({ output: /gtceu:(lead|red_alloy)_.*cable/ })
+        event.remove({ output: removed })
     })
 }
 
@@ -32,7 +32,7 @@ let drain = (drained) => {
 Ingredient.of(/thermal:.*_(ore|sand|ingot|block|nugget|coin|dust|plate|gear|bucket)$/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:raw_.*/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*(rockwool|rubberwood|cast|coin)/).itemIds.forEach(item => yeet(item))
-Ingredient.of(/thermal:*augment.*/).itemIds.forEach(item => yeet(item))
+Ingredient.of(/thermal:.*augment.*/).itemIds.forEach(item => yeet(item))
 
 Ingredient.of(/gtceu:(lead|red_alloy)_.*cable/).itemIds.forEach(item => removeRecipe(item))
 
