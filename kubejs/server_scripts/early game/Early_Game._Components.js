@@ -191,7 +191,7 @@ event.shaped(
         ],
         {
             H: '#forge:tools/hammer',
-            M: 'minecraft:clay_ball'
+            M: 'minecraft:clay'
         }
     ).id('kubejs:shaped/clay_plate')
     
