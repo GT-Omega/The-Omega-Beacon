@@ -99,6 +99,7 @@ event.shaped(
 ServerEvents.tags('item', event =>{
 
 event.add('thermal:crafting/dies','gtceu:ingot_casting_mold')
+event.add('thermal:crafting/dies','gtceu:gear_casting_mold')
 
 
 })
