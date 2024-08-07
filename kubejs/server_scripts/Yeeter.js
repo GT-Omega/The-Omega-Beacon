@@ -1,15 +1,20 @@
-// Remove and hide items
-let yeet = (yeeted) => {
+// Remove ONLY the recipe for an item
+let removeRecipe = (removed) => {
     ServerEvents.recipes(event => {
-        event.remove({ output: yeeted })
+        event.remove({ output: /gtceu:(lead|red_alloy)_.*cable/ })
     })
+}
+
+// Hide items from EMI and remove their recipes
+let yeet = (yeeted) => {
+    removeRecipe(yeeted)
     ServerEvents.tags('item', event => {
         event.removeAllTagsFrom(yeeted)
         event.add('c:hidden_from_recipe_viewers', yeeted)
     })
 }
 
-// Remove and hide fluids
+// Hide fluids from EMI and remove their recipes
 let drain = (drained) => {
     ServerEvents.recipes(event => {
         event.remove({ output: Fluid.of(drained) })
@@ -27,7 +32,10 @@ let drain = (drained) => {
 Ingredient.of(/thermal:.*_(ore|sand|ingot|block|nugget|coin|dust|plate|gear|bucket)$/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:raw_.*/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*(rockwool|rubberwood|cast|coin)/).itemIds.forEach(item => yeet(item))
-Ingredient.of(/thermal:.*augment.*/).itemIds.forEach(item => yeet(item))
+Ingredient.of(/thermal:*augment.*/).itemIds.forEach(item => yeet(item))
+
+Ingredient.of(/gtceu:(lead|red_alloy)_.*cable/).itemIds.forEach(item => removeRecipe(item))
+
 const items = [
                     'thermal:machine_sawmill',
                     'thermal:machine_insolator',
