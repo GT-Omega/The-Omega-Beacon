@@ -105,6 +105,4 @@ items.forEach(item => yeet(item))
 fluids.forEach(fluid => drain(fluid))
 
 ServerEvents.recipes(event => {
-    event.remove({ type: 'gtceu:centrifuge' , output: 'gtceu:raw_rubber_dust' })
-    event.remove({ type: 'gtceu:extractor' , output: 'gtceu:raw_rubber_dust' })
 })
