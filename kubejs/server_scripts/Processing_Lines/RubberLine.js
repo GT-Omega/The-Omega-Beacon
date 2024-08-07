@@ -13,8 +13,8 @@ ServerEvents.recipes(event => {
         .EUt(0)
     
     event.recipes.gtceu.fermenting('rubber_mixing')
-        .inputFluids('gtceu:latex 864', 'gtceu:cider_vinegar 72')
-        .outputFluids('gtceu:natural_rubber 864')
+        .inputFluids('gtceu:latex 1152', 'gtceu:cider_vinegar 144')
+        .outputFluids('gtceu:natural_rubber 1296')
         .duration(600)
         .EUt(0)
 
