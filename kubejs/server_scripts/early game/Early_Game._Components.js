@@ -171,5 +171,40 @@ ServerEvents.recipes(event => {
             M: 'ulvcovm:ulv_electric_pump'
         }
     ).id('ulvcovm:shaped/ulv_electric_conveyor')
-
+    event.custom({
+        type: 'ae2:transform',
+        circumstance: { type: 'fluid', tag: 'minecraft:lava' },
+        ingredients: [
+          { item: 'kubejs:fired_ball_cast' }, { item: Item.of('gtceu:glass_dust',3)}
+        ],
+        result: { count: 1, id: 'gtceu:glass_tube' }
+    }).id('kubejs:transformation/glass_tube')
+    
+    event.smelting('kubejs:unfired_ball_cast', 'kubejs:fired_ball_cast').id('kubejs:smelting/fired_ball_cast')
+    
+event.shaped(
+        'kubejs:clay_plate',
+        [
+            'H',
+            'MM',
+            'MM'
+        ],
+        {
+            H: '#forge:tools/hammer',
+            M: 'minecraft:clay_ball'
+        }
+    ).id('kubejs:shaped/clay_plate')
+    
+    event.shaped(
+        'kubejs:unfired_ball_cast',
+        [
+            'H',
+            '',
+            'M'
+        ],
+        {
+            H: '#forge:tools/hammer',
+            M: 'kubejs:clay_plate'
+        }
+    ).id('kubejs:shaped/unfired_ball_cast')
 })
