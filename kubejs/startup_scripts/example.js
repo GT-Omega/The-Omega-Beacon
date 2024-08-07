@@ -1,6 +1,4 @@
-// priority: 0
 
-// Visit the wiki for more info - https://kubejs.com/
-
-console.info('Hello, World! (Loaded startup scripts)')
-
+event.create('unfired_ball_cast').texture('kubejs:item/unfired_ball_cast')
+event.create('fired_ball_cast').texture('kubejs:item/fired_ball_cast')
+event.create('clay_plate')
