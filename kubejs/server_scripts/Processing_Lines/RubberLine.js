@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.tree_fluid_extraction('rubber_extract')
-        .itemInputs('6x #omega:latex_extractable')
+        .itemInputs('6x #omega:rubber_wood')
         .outputFluids('gtceu:latex 864')
         .chancedOutput('3x gtceu:sticky_resin', 3300, 0)
         .duration(2400)
