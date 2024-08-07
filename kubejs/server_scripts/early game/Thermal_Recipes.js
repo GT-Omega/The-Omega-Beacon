@@ -15,6 +15,9 @@ event.recipes.thermal.press('gtceu:compressed_fireclay',
     ['gtceu:fireclay_dust', 'gtceu:ingot_casting_mold'])
 
 
+//induction smleter recipe
+event.recipes.thermal.smelter('2x gtceu:tin_alloy_ingot', ['minecraft:iron_ingot', 'gtceu:tin_ingot'])
+
 })
 
 
