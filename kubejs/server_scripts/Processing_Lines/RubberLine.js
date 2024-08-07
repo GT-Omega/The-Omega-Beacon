@@ -1,7 +1,8 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.tree_fluid_extraction('rubber_extract')
-        .itemInputs('6x #minecraft:logs')
+        .itemInputs('6x #omega:latex_extractable')
         .outputFluids('gtceu:latex 864')
+        .chancedOutput('3x gtceu:sticky_resin', 3300, 0)
         .duration(2400)
         .EUt(0)
 
@@ -16,6 +17,21 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:natural_rubber 864')
         .duration(600)
         .EUt(0)
+
+    event.recipes.gtceu.chemical_reactor('rubber_vulcanising')
+        .inputFluids('gtceu:natural_rubber 1296')
+        .itemInputs('gtceu:sulfur_dust')
+        .outputFluids('gtceu:rubber 1296')
+        .duration(600)
+        .EUt(16)
+
+    event.recipes.gtceu.centrifuge('sticky_resin_seperation')
+        .itemInputs('gtceu:sticky_resin')
+        .outputFluids('gtceu:glue 100')
+        .itemOutputs('3x gtceu:raw_rubber_dust')
+        .chancedOutput('gtceu:plant_ball', 1000, 850)
+        .duration(400)
+        .EUt(16)
     
     event.shapeless('6x gtceu:natural_rubber_plate', ['gtceu:natural_rubber_bucket', '#forge:tools/mallets'])
 })
