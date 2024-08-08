@@ -174,13 +174,14 @@ ServerEvents.recipes(event => {
 
     event.shaped('kubejs:treated_wood_casing',
         [
-            'PPP',
+            'NPN',
             'PHP',
-            'PPP'
+            'NPN'
         ],
         {
-            P: ['kubejs:treated_wood_casing'],
-            H: ['#forge:tools/hammer']
+            N:['gtceu:tin_alloy_screw'],
+            P: ['gtceu:treated_wood_plate'],
+            H: ['#forge:tools/screwdrivers']
         }
     )
 
