@@ -172,4 +172,16 @@ ServerEvents.recipes(event => {
         }
     ).id('ulvcovm:shaped/ulv_electric_conveyor')
 
+    event.shaped('kubejs:treated_wood_casing',
+        [
+            'PPP',
+            'PHP',
+            'PPP'
+        ],
+        {
+            P: ['kubejs:treated_wood_casing'],
+            H: ['#forge:tools/hammer']
+        }
+    )
+
 })

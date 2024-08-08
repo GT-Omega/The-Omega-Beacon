@@ -3,56 +3,51 @@
 ServerEvents.recipes(event => {
     event.shaped(
         'thermal:device_collector', 
-        ['VWV',
-         'XYX',
-         'VWV',
+        [
+            'VYV',
+            'XCX',
+            'VWV',
         ],
         {
             V: ['gtceu:tin_alloy_plate'],
-            W:['ulvcovm:ulv_electric_motor'],
-            X:['gtceu:tin_rotor'],
-            Y:['minecraft:hopper'],
-            
-    
-        } )
+            W: ['ulvcovm:ulv_electric_motor'],
+            X: ['gtceu:tin_rotor'],
+            Y: ['minecraft:hopper'],
+            C: ['kubejs:treated_wood_casing']
+        } 
+    )
+
 event.shaped(
 //i'd rather have my blood sucked out by leaches. Then craft one more of you.
-//
     'thermal:machine_furnace',
-        [   ' A ', 
+        [   
+            ' A ', 
             'BCB', 
             'DED'
         ],
         {
-
-            A:['gtceu:vacuum_tube'],
-            B:['gtceu:coke_oven_bricks'],
-            C:['gtceu:ulv_machine_hull'],
-            D:['gtceu:small_copper_gear'],
-            E:['thermal:rf_coil']
-
+            A: ['gtceu:vacuum_tube'],
+            B: ['gtceu:coke_oven_bricks'],
+            C: ['gtceu:ulv_machine_hull'],
+            D: ['gtceu:small_copper_gear'],
+            E: ['thermal:rf_coil']
         }
-
     ).id('thermal:machine_furnace')
 
 
 event.shaped(
     'thermal:machine_pulverizer',
     [
-
         ' F ',
         'GHG',
         'IJI'
-
     ],
     {
-
-        F:['ulvcovm:ulv_electric_piston'],
-        G:['gtceu:vacuum_tube'],
-        H:['gtceu:ulv_machine_hull'],
-        I:['gtceu:small_copper_gear'],
-        J:['thermal:rf_coil']
-
+        F: ['ulvcovm:ulv_electric_piston'],
+        G: ['gtceu:vacuum_tube'],
+        H: ['gtceu:ulv_machine_hull'],
+        I: ['gtceu:small_copper_gear'],
+        J: ['thermal:rf_coil']
     }
 ).id('thermal:machine_pulverizer')
 
@@ -107,9 +102,8 @@ event.shaped(
 event.shaped(
     'thermal:device_water_gen',
     [
-    
     'Z1Z',
-    '243',
+    '2C3',
     'Z5Z'
     ],
     {
@@ -118,8 +112,8 @@ event.shaped(
         1: ['gtceu:copper_normal_fluid_pipe'],
         2:['ulvcovm:ulv_fluid_regulator'],
         3:['ulvcovm:ulv_electric_pump'],
-        4:['gtceu:treated_wood_plate'],
-        5:['gtceu:tin_rotor']
+        5:['gtceu:tin_rotor'],
+        C: ['kubejs:treated_wood_casing']
 
     }
 
