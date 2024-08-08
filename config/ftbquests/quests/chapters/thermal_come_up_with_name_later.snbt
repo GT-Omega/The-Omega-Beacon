@@ -202,11 +202,14 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["6A8576719F16E3EA"]
+			dependencies: [
+				"6A8576719F16E3EA"
+				"3B10CEB6CC83A984"
+			]
 			id: "3F8054AAEE2EE89C"
 			tasks: [{
 				id: "1939FB4364327E9C"
-				item: "gtceu:treated_wood_plate"
+				item: "kubejs:treated_wood_casing"
 				type: "item"
 			}]
 			x: 6.0d
