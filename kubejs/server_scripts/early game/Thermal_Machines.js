@@ -1,6 +1,20 @@
 //i wonder why they named these thermal, maybe because setting up these recipes is kinda HOT
 
 ServerEvents.recipes(event => {
+    event.shaped(
+        'thermal:device_collector', 
+        ['VWV',
+         'XYX',
+         'VWV',
+        ],
+        {
+            V: ['gtceu:tin_alloy_plate'],
+            W:['ulvcovm:ulv_electric_motor'],
+            X:['gtceu:tin_rotor'],
+            Y:['minecraft:hopper'],
+            
+    
+        } )
 event.shaped(
 //i'd rather have my blood sucked out by leaches. Then craft one more of you.
 //
@@ -89,18 +103,26 @@ event.shaped(
     
     ).id('thermal:machine_press')
 
-    //firebrick 
-    event.recipes.thermal.press('gtceu:compressed_fireclay', 
-        ['gtceu:fireclay_dust', 'gtceu:ingot_casting_mold'])
+//acques accumulator
+event.shaped(
+    'thermal:device_water_gen',
+    [
+    
+    'Z1Z',
+    '243',
+    'Z5Z'
+    ],
+    {
+
+        Z:['gtceu:tin_alloy_plate'],
+        1: ['gtceu:copper_normal_fluid_pipe'],
+        2:['ulvcovm:ulv_fluid_regulator'],
+        3:['ulvcovm:ulv_electric_pump'],
+        4:['gtceu:treated_wood_plate'],
+        5:['gtceu:tin_rotor']
+
+    }
+
+)
 
 })
-
-//add thermal tag to all gtmolds :Tr:
-ServerEvents.tags('item', event =>{
-
-event.add('thermal:crafting/dies','gtceu:ingot_casting_mold')
-event.add('thermal:crafting/dies','gtceu:gear_casting_mold')
-
-
-})
-
