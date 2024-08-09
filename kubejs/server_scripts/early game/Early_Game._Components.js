@@ -185,5 +185,5 @@ ServerEvents.recipes(event => {
     
     event.shapeless('2x gtceu:clay_plate', ['#forge:tools/hammer', 'minecraft:clay']).id('omega:shapeless/clay_plate')
 
-    event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/hammer', 'gtceu:clay_plate']).id('omega:shapeless/unfired_ball_cast')
+    event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/mallets', 'gtceu:clay_plate']).id('omega:shapeless/unfired_ball_cast')
 })
