@@ -171,15 +171,38 @@ ServerEvents.recipes(event => {
             M: 'ulvcovm:ulv_electric_pump'
         }
     ).id('ulvcovm:shaped/ulv_electric_conveyor')
+<<<<<<< Updated upstream:kubejs/server_scripts/early game/Early_Game._Components.js
+=======
+
+    event.shaped('kubejs:treated_wood_casing',
+        [
+            'NPN',
+            'PHP',
+            'NPN'
+        ], {
+            N:['gtceu:tin_alloy_screw'],
+            P: ['gtceu:treated_wood_plate'],
+            H: ['#forge:tools/screwdrivers']
+        }
+    )
+
+    event.shapeless('2x gtceu:clay_plate', ['#forge:tools/hammers', 'minecraft:clay']).id('omega:shapeless/clay_plate')
+    event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/mallets', 'gtceu:clay_plate']).id('omega:shapeless/unfired_ball_cast')
+>>>>>>> Stashed changes:kubejs/server_scripts/tier_specific/ULV.js
     
     event.custom({
-        type: 'ae2:transform',
-        circumstance: { type: 'fluid', tag: 'minecraft:lava' },
-        ingredients: [
-          { item: 'kubejs:fired_ball_cast' }, { item: Item.of('gtceu:glass_dust',3)}
+        "type": 'ae2:transform',
+        "circumstance": { "type": 'fluid', "tag": 'minecraft:lava' },
+        "ingredients": [
+          { "item": 'kubejs:fired_ball_cast' }, { "item": 'gtceu:glass_dust' }, { "item": 'gtceu:glass_dust' }, { "item": 'gtceu:glass_dust' }
         ],
-        result: { count: 1, id: 'gtceu:glass_tube' }
+        "result": { "count": 2, "item": 'gtceu:glass_tube' }
     }).id('omega:transformation/glass_tube')
+<<<<<<< Updated upstream:kubejs/server_scripts/early game/Early_Game._Components.js
+=======
+    
+    event.recipes.thermal.press('gtceu:compressed_fireclay', ['gtceu:fireclay_dust', 'gtceu:ingot_casting_mold'])
+>>>>>>> Stashed changes:kubejs/server_scripts/tier_specific/ULV.js
     
     event.smelting('kubejs:unfired_ball_cast', 'kubejs:fired_ball_cast').id('omega:smelting/fired_ball_cast')
    
