@@ -182,8 +182,21 @@ ServerEvents.recipes(event => {
     }).id('omega:transformation/glass_tube')
     
     event.smelting('kubejs:unfired_ball_cast', 'kubejs:fired_ball_cast').id('omega:smelting/fired_ball_cast')
-    
+   
     event.shapeless('2x gtceu:clay_plate', ['#forge:tools/hammer', 'minecraft:clay']).id('omega:shapeless/clay_plate')
-
     event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/mallets', 'gtceu:clay_plate']).id('omega:shapeless/unfired_ball_cast')
+
+    event.shaped('kubejs:treated_wood_casing',
+        [
+            'NPN',
+            'PHP',
+            'NPN'
+        ],
+        {
+            N:['gtceu:tin_alloy_screw'],
+            P: ['gtceu:treated_wood_plate'],
+            H: ['#forge:tools/screwdrivers']
+        }
+    )
+
 })
