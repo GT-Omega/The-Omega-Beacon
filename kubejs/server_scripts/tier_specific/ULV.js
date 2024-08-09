@@ -6,8 +6,7 @@ ServerEvents.recipes(event => {
         [
             'ABA',
             'CCC'
-        ],
-        {
+        ], {
             A: 'gtceu:iron_bolt',
             B: 'gtceu:glass_tube',
             C: 'gtceu:copper_single_wire'
@@ -19,14 +18,12 @@ ServerEvents.recipes(event => {
         [
             'FGF',
             'HIH'
-        ],
-        {
+        ], {
             F: 'gtceu:tin_plate',
             G: 'gtceu:iron_plate',
             H: 'gtceu:red_alloy_single_wire',
             I: 'gtceu:ulv_machine_casing'
         }
-
     ).id('gtceu:shaped/ulv_machine_hull')
 
     event.shaped(
@@ -35,8 +32,7 @@ ServerEvents.recipes(event => {
             'KKK',
             'KJK',
             'KKK',  
-        ],
-        {
+        ], {
             K: 'gtceu:iron_plate',
             J: '#forge:tools/wrench',
         }
@@ -49,8 +45,7 @@ ServerEvents.recipes(event => {
             'NNN',
             'NON',
             'NNN',
-        ],
-        {
+        ], {
             N: 'gtceu:fine_copper_wire',
             O: 'gtceu:iron_rod'
         }
@@ -63,8 +58,7 @@ ServerEvents.recipes(event => {
             'LLL',
             'LML',
             'LLL',
-        ],
-        {
+        ], {
             L: 'gtceu:fine_red_alloy_wire',
             M: 'gtceu:ulv_voltage_coil'
         }    
@@ -76,8 +70,7 @@ ServerEvents.recipes(event => {
         [
             'TR',
             'MT'
-        ],
-        {
+        ], {
             T: 'gtceu:tin_single_wire',
             R: 'gtceu:copper_rod',
             M: 'gtceu:magnetic_iron_rod'
@@ -89,8 +82,7 @@ ServerEvents.recipes(event => {
         [
             'PR',
             'MG'
-        ],
-        {
+        ], {
             P: 'gtceu:copper_plate',
             R: 'gtceu:copper_rod',
             M: 'ulvcovm:ulv_electric_motor',
@@ -103,8 +95,7 @@ ServerEvents.recipes(event => {
         [
             'MR',
             'PC'
-        ],
-        {
+        ], {
             P: 'ulvcovm:ulv_electric_piston',
             R: 'gtceu:copper_rod',
             M: 'ulvcovm:ulv_electric_motor',
@@ -117,8 +108,7 @@ ServerEvents.recipes(event => {
         [
             'PR',
             'WM'
-        ],
-        {
+        ], {
             P: 'gtceu:copper_normal_fluid_pipe',
             R: 'gtceu:copper_rotor',
             M: 'ulvcovm:ulv_electric_motor',
@@ -131,8 +121,7 @@ ServerEvents.recipes(event => {
         [
             'TR',
             'MT'
-        ],
-        {   
+        ], {   
             T: '#gtceu:circuits/ulv',
             R: 'gtceu:tin_single_wire',
             M: 'ulvcovm:ulv_electric_pump'
@@ -144,8 +133,7 @@ ServerEvents.recipes(event => {
         [
             'RR',
             'MM'
-        ],
-        {
+        ], {
             R: 'gtceu:sticky_resin',
             M: 'ulvcovm:ulv_electric_pump'
         }
@@ -156,8 +144,7 @@ ServerEvents.recipes(event => {
             'NPN',
             'PHP',
             'NPN'
-        ],
-        {
+        ], {
             N:['gtceu:tin_alloy_screw'],
             P: ['gtceu:treated_wood_plate'],
             H: ['#forge:tools/screwdrivers']
