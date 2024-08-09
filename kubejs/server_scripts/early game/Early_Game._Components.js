@@ -171,6 +171,7 @@ ServerEvents.recipes(event => {
             M: 'ulvcovm:ulv_electric_pump'
         }
     ).id('ulvcovm:shaped/ulv_electric_conveyor')
+    
     event.custom({
         type: 'ae2:transform',
         circumstance: { type: 'fluid', tag: 'minecraft:lava' },
@@ -178,33 +179,11 @@ ServerEvents.recipes(event => {
           { item: 'kubejs:fired_ball_cast' }, { item: Item.of('gtceu:glass_dust',3)}
         ],
         result: { count: 1, id: 'gtceu:glass_tube' }
-    }).id('kubejs:transformation/glass_tube')
+    }).id('omega:transformation/glass_tube')
     
-    event.smelting('kubejs:unfired_ball_cast', 'kubejs:fired_ball_cast').id('kubejs:smelting/fired_ball_cast')
+    event.smelting('kubejs:unfired_ball_cast', 'kubejs:fired_ball_cast').id('omega:smelting/fired_ball_cast')
     
-event.shaped(
-        'kubejs:clay_plate',
-        [
-            'H',
-            'MM',
-            'MM'
-        ],
-        {
-            H: '#forge:tools/hammer',
-            M: 'minecraft:clay'
-        }
-    ).id('kubejs:shaped/clay_plate')
-    
-    event.shaped(
-        'kubejs:unfired_ball_cast',
-        [
-            'H',
-            '',
-            'M'
-        ],
-        {
-            H: '#forge:tools/hammer',
-            M: 'kubejs:clay_plate'
-        }
-    ).id('kubejs:shaped/unfired_ball_cast')
+    event.shapeless('2x kubejs:clay_plate', ['#forge:tools/hammer', 'minecraft:clay']).id('omega:shapeless/clay_plate')
+
+    event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/hammer', 'kubejs:clay_plate']).id('omega:shapeless/unfired_ball_cast')
 })
