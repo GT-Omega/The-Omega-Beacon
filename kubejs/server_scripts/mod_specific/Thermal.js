@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         } 
     )
 
-event.shaped(
+    event.shaped(
 //i'd rather have my blood sucked out by leaches. Then craft one more of you.
     'thermal:machine_furnace',
         [   
@@ -35,7 +35,7 @@ event.shaped(
     ).id('thermal:machine_furnace')
 
 
-event.shaped(
+    event.shaped(
     'thermal:machine_pulverizer',
     [
         ' F ',
@@ -54,7 +54,7 @@ event.shaped(
 
 //im an evil person 
 //im surprised that the player can stand this one, its akin to walking into a induction smelter naked and burning to a crisp.
-event.shaped(
+    event.shaped(
     'thermal:machine_smelter',
     [
 
@@ -76,7 +76,7 @@ event.shaped(
 //nah the last one was tame THIS TIME I AM THE VILLAN  
 //this recipe should make the player want to shove themself into a forge hammer.
 //id rather spend eternity eating shards of glass then to actually do this recipe
-event.shaped(
+    event.shaped(
     'thermal:machine_press',
         [
 
@@ -98,8 +98,8 @@ event.shaped(
     
     ).id('thermal:machine_press')
 
-//acques accumulator
-event.shaped(
+//aqueous accumulator
+    event.shaped(
     'thermal:device_water_gen',
     [
     'Z1Z',
@@ -119,4 +119,12 @@ event.shaped(
 
 )
 
+    //GTCEUM Plates     event.recipes.thermal.press('2x gtceu:tin_plate', '3x gtceu:tin_ingot'
+    event.recipes.thermal.press('2x gtceu:copper_plate', '3x minecraft:copper_ingot')
+    event.recipes.thermal.press('2x gtceu:tin_plate', '3x gtceu:tin_ingot')
+    event.recipes.thermal.press('2x gtceu:lead_plate', '3x gtceu:lead_ingot')  
+    event.recipes.thermal.press('2x gtceu:steel_plate', '3x gtceu:steel_ingot')
+    event.recipes.thermal.press('2x gtceu:iron_plate', '3x gtceu:tin_ingot')
+    event.recipes.thermal.press('2x gtceu:copper_plate', '3x minecraft:ingot_ingot')
+    event.recipes.thermal.press('2x gtceu:red_alloy_plate', '3x gtceu:red_alloy_ingot')
 })
