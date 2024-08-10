@@ -151,6 +151,10 @@ ServerEvents.recipes(event => {
         }
     )
 
+
+
+
+    //glass tubes
     event.shapeless('2x gtceu:clay_plate', ['#forge:tools/hammers', 'minecraft:clay']).id('omega:shapeless/clay_plate')
     event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/mallets', 'gtceu:clay_plate']).id('omega:shapeless/unfired_ball_cast')
     
@@ -158,15 +162,13 @@ ServerEvents.recipes(event => {
 
     event.custom({
         "type": 'ae2:transform',
-        "circumstance": { "type": 'fluid', "tag": 'minecraft:lava' },
+        "circumstance": { "type": 'fluid', "tag": 'minecraft:water' },
         "ingredients": [
           { "item": 'kubejs:fired_ball_cast' }, { "item": 'gtceu:glass_dust' }, { "item": 'gtceu:glass_dust' }, { "item": 'gtceu:glass_dust' }
         ],
         "result": { "count": 2, "item": 'gtceu:glass_tube' }
     }).id('omega:transformation/glass_tube')
     
-    event.recipes.thermal.press('gtceu:compressed_fireclay', ['gtceu:fireclay_dust', 'gtceu:ingot_casting_mold'])
-    
-    event.recipes.thermal.smelter('2x gtceu:tin_alloy_ingot', ['minecraft:iron_ingot', 'gtceu:tin_ingot'])
+  
 
 })
