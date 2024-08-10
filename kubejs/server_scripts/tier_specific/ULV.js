@@ -160,8 +160,7 @@ ServerEvents.recipes(event => {
         "type": 'ae2:transform',
         "circumstance": { "type": 'fluid', "tag": 'minecraft:lava' },
         "ingredients": [
-          { "item": 'kubejs:fired_ball_cast' }, { "item": 'gtceu:glass_dust' }, { "item": 'gtceu:glass_dust' }, { "item": 'gtceu:glass_dust' }
-        ],
+          { "item": 'kubejs:fired_ball_cast' }, { "item": 'gtceu:glass_dust' }, ],
         "result": { "count": 2, "item": 'gtceu:glass_tube' }
     }).id('omega:transformation/glass_tube')
     
