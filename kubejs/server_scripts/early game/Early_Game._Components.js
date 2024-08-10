@@ -161,13 +161,15 @@ ServerEvents.recipes(event => {
     event.smelting('kubejs:fired_ball_cast', 'kubejs:unfired_ball_cast').id('omega:smelting/fired_ball_cast')
 
     event.custom({
+        "circumstance": { "type": 'fluid', "tag": 'minecraft:lava' },
         "type": 'ae2:transform',
-        "circumstance": { "type": 'fluid', "tag": 'minecraft:water' },
         "ingredients": [
-          { "item": 'kubejs:fired_ball_cast' }, { "item": 'gtceu:glass_dust' }, { "item": 'gtceu:glass_dust' }, { "item": 'gtceu:glass_dust' }
+          { "item": 'kubejs:fired_ball_cast' },  { "item": 'gtceu:glass_dust' }
         ],
-        "result": { "count": 2, "item": 'gtceu:glass_tube' }
-    }).id('omega:transformation/glass_tube')
+        "result": { "count": 2, 
+                    "item": 'gtceu:glass_tube' 
+                }
+    })
     
   
 
