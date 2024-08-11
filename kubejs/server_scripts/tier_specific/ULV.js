@@ -167,4 +167,10 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.press('gtceu:compressed_fireclay', ['gtceu:fireclay_dust', 'gtceu:ingot_casting_mold'])
     
     event.recipes.thermal.smelter('2x gtceu:tin_alloy_ingot', ['minecraft:iron_ingot', 'gtceu:tin_ingot'])
+
+    //Wrought Iron Processing
+    event.remove({ id: 'gtceu:smelting/wrought_iron_nugget' })
+    
+    event.recipes.thermal.smelter(['kubejs:hot_wrought_iron_ingot', 'gtceu:small_dark_ash_dust'], ['minecraft:iron_ingot'])
+    event.recipes.thermal.press('gtceu:wrought_iron_ingot', ['kubejs:hot_wrought_iron_ingot'])
 })

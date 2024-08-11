@@ -248,6 +248,17 @@
 			x: 7.0d
 			y: -6.0d
 		}
+		{
+			dependencies: ["345866892A28EE70"]
+			id: "4545A2E4754072D3"
+			tasks: [{
+				id: "724CF01340C66D91"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
 	]
 	title: "Thermal (come up with name later)"
 }
