@@ -102,35 +102,22 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["72E6CC33F218BB29"]
-			id: "394D70C5F1B9C9FF"
-			tasks: [{
-				id: "1241984D22839340"
-				item: "thermal:machine_furnace"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 1.5d
-		}
-		{
 			dependencies: [
-				"48909F0957B44C37"
-				"394D70C5F1B9C9FF"
+				"516F6BC5DEF33A89"
+				"245C2BEE7B27F5E3"
 			]
 			id: "345866892A28EE70"
+			progression_mode: "linear"
 			tasks: [{
 				id: "3B23C92F063A9C4D"
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 8.5d
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"394D70C5F1B9C9FF"
-				"0CF82A625948170D"
-			]
+			dependencies: ["0CF82A625948170D"]
 			id: "48909F0957B44C37"
 			tasks: [{
 				id: "2773DF5E07E9D653"
@@ -139,6 +126,138 @@
 			}]
 			x: 2.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["345866892A28EE70"]
+			description: ["Tin alloy plates are used in thermal devices."]
+			id: "3B10CEB6CC83A984"
+			tasks: [{
+				id: "7E2E8B5B62436422"
+				item: "gtceu:tin_alloy_plate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["762AD13D307CFF01"]
+			description: ["coke oven used in treated wood casings"]
+			id: "6A8576719F16E3EA"
+			tasks: [{
+				id: "3D44FD2DE6FDB710"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["72E6CC33F218BB29"]
+			id: "5403827F2BD5C6DB"
+			tasks: [{
+				id: "6359391371FDA919"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5403827F2BD5C6DB"
+				"762AD13D307CFF01"
+			]
+			id: "516F6BC5DEF33A89"
+			tasks: [{
+				id: "0B62A613AABDC314"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5403827F2BD5C6DB"
+				"48909F0957B44C37"
+			]
+			id: "245C2BEE7B27F5E3"
+			tasks: [{
+				id: "1BF49ACA17DA381A"
+				item: "gtceu:compressed_fireclay"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5403827F2BD5C6DB"]
+			id: "762AD13D307CFF01"
+			tasks: [{
+				id: "2AE51A5416C8AAAD"
+				item: "gtceu:compressed_coke_clay"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6A8576719F16E3EA"
+				"3B10CEB6CC83A984"
+			]
+			id: "3F8054AAEE2EE89C"
+			tasks: [{
+				id: "1939FB4364327E9C"
+				item: "kubejs:treated_wood_casing"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3F8054AAEE2EE89C"]
+			id: "3F2E6FE9ECCC370D"
+			tasks: [{
+				id: "5A20B151FAA57810"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F8054AAEE2EE89C"]
+			id: "69540C1EE923B1AA"
+			tasks: [{
+				id: "24200D8F1DC902EB"
+				item: "thermal:device_collector"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3F8054AAEE2EE89C"]
+			id: "28FAB480E3259503"
+			tasks: [{
+				id: "2869E6DED1A494A6"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["345866892A28EE70"]
+			id: "4545A2E4754072D3"
+			tasks: [{
+				id: "724CF01340C66D91"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
 		}
 	]
 	title: "Thermal (come up with name later)"
