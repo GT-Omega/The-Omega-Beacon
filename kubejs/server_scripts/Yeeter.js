@@ -35,6 +35,8 @@ Ingredient.of(/thermal:.*(rockwool|rubberwood|cast|coin)/).itemIds.forEach(item 
 Ingredient.of(/thermal:.*augment.*/).itemIds.forEach(item => yeet(item))
 
 Ingredient.of(/gtceu:(lead|red_alloy)_.*cable/).itemIds.forEach(item => removeRecipe(item))
+Ingredient.of(/gtceu:(lp|hp)_steam.*/).itemIds.forEach(item => yeet(item))
+
 
 const items = [
                     'thermal:machine_sawmill',
@@ -80,7 +82,8 @@ const items = [
                     'thermal:junk_net',
                     'thermal:aquachow',
                     'thermal:deep_aquachow',
-                    'ae2:facade'
+                    'ae2:facade',
+                    'gtceu:steam_miner'
 ]            
 const fluids = [
                     'thermal:redstone',
