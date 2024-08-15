@@ -61,7 +61,23 @@ ServerEvents.recipes(event => {
 
 //Specialized Drawers
 
+event.shaped('functionalstorage:storage_controller',
+    [
 
+        'LML',
+        'NON',
+        'LML',
+
+    ],
+    {
+
+        L:['gtceu:wrought_iron_plate'],
+        M:['gtceu:basic_electronic_circuit'],
+        N:['functionalstorage:oak_1'],
+        O:['gtceu:lv_machine_hull']
+
+    }
+).id('functionalstorage:storage_controller')
 
 //tools
 
