@@ -76,7 +76,8 @@ const items = [
                     'thermal:aquachow',
                     'thermal:deep_aquachow',
                     'ae2:facade',
-                    'gtceu:steam_miner'
+                    'gtceu:steam_miner',
+                    'gtceu:primitive_blast_furnace'
 ]            
 const fluids = [
                     'thermal:redstone',
@@ -99,3 +100,5 @@ const fluids = [
 ]
 items.forEach(item => yeet(item))
 fluids.forEach(fluid => drain(fluid))
+
+
