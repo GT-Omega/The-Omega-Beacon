@@ -151,6 +151,9 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Treated Wood Plank Recipes
+    event.recipes.thermal.press('gtceu:treated_wood_plate', ['gtceu:treated_wood_dust'])
+
     event.shapeless('2x gtceu:clay_plate', ['#forge:tools/hammers', 'minecraft:clay']).id('omega:shapeless/clay_plate')
     event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/mallets', 'gtceu:clay_plate']).id('omega:shapeless/unfired_ball_cast')
     
@@ -173,4 +176,15 @@ ServerEvents.recipes(event => {
     
     event.recipes.thermal.smelter(['kubejs:hot_wrought_iron_ingot', 'gtceu:dark_ash_dust'], ['minecraft:iron_ingot'])
     event.recipes.thermal.press('gtceu:wrought_iron_ingot', ['kubejs:hot_wrought_iron_ingot'])
+
+    //ULV Paper
+    event.custom({
+        "type": 'ae2:transform',
+        "circumstance": { "type": 'fluid', "tag": 'minecraft:water' },
+        "ingredients": [
+          { "item": 'gtceu:wood_dust' }, ],
+        "result": { "count": 1, "item": 'gtceu:paper_dust' }
+    }).id('omega:transformation/paper_dust')
+
+    event.recipes.thermal.press('minecraft:paper', ['gtceu:paper_dust'])
 })
