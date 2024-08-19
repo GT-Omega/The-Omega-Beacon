@@ -77,7 +77,11 @@ const items = [
                     'thermal:deep_aquachow',
                     'ae2:facade',
                     'gtceu:steam_miner',
-                    'gtceu:primitive_blast_furnace'
+                    'gtceu:primitive_blast_furnace',
+                    'thermal:press_gear_die',
+                    'thermal:press_packing_2x2_die',
+                    'thermal:press_packing_3x3_die',
+                    'thermal:press_unpacking_die',
 ]            
 const fluids = [
                     'thermal:redstone',

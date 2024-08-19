@@ -32,4 +32,13 @@ ServerEvents.recipes(event => {
                      '2x gtceu:hematite_dust')
         .duration(6000).EUt(30)
         .circuit(9)
+
+    //Treated Wood Pulverization
+    event.recipes.thermal.pulverizer(['gtceu:treated_wood_dust'], ['gtceu:treated_wood_planks'])
+    event.recipes.thermal.pulverizer(['gtceu:treated_wood_dust'], ['gtceu:treated_wood_plate'])
+    event.recipes.thermal.pulverizer(['gtceu:treated_wood_dust'], ['gtceu:treated_wood_door'])
+    event.recipes.thermal.pulverizer(['gtceu:treated_wood_dust'], ['gtceu:treated_wood_small_fluid_pipe'])
+    event.recipes.thermal.pulverizer(['3x gtceu:treated_wood_dust'], ['gtceu:treated_wood_frame'])
+    event.recipes.thermal.pulverizer(['3x gtceu:treated_wood_dust'], ['gtceu:treated_wood_normal_fluid_pipe'])
+    event.recipes.thermal.pulverizer(['6x gtceu:treated_wood_dust'], ['gtceu:treated_wood_large_fluid_pipe'])
 })
