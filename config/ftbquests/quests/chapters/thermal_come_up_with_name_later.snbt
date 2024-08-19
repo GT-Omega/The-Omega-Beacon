@@ -261,6 +261,7 @@
 		}
 		{
 			dependencies: ["5403827F2BD5C6DB"]
+			description: ["You can make paper 2 ways: find sugar cane, grind it into chad then press into Paper, or throw wood pulp into water to make chad and then press into Paper"]
 			id: "71376344CC69E13D"
 			tasks: [{
 				id: "38C989E4EA4EA0AD"
@@ -272,6 +273,7 @@
 		}
 		{
 			dependencies: ["4545A2E4754072D3"]
+			description: ["LV time baybeeeee"]
 			id: "1334D98DDBF3575A"
 			tasks: [{
 				id: "715F4EA24D549F57"
