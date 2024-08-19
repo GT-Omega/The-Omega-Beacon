@@ -29,6 +29,8 @@ Ingredient.of(/thermal:raw_.*/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*(rockwool|rubberwood|cast|coin)/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*augment.*/).itemIds.forEach(item => yeet(item))
 
+Ingredient.of(/functionalstorage:,*fluid*/).itemIds.forEach(item => yeet(item))
+
 Ingredient.of(/gtceu:(lp|hp)_steam.*/).itemIds.forEach(item => yeet(item))
 
 const items = [

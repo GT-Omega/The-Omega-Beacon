@@ -81,7 +81,39 @@ event.shaped('functionalstorage:storage_controller',
 
 //tools
 
+event.shaped(
+        'functionalstorage:linking_tool',
+    
+   [ 'PQR',
+    'QSQ',
+    'TQP'], 
 
+    {
+
+        P:['gtceu:tin_single_cable'],
+        Q:['gtceu:iron_plate'],
+        R:['gtceu:lv_sensor'],
+        S:['#functionalstorage:drawer'],
+        T:['gtceu:lv_emitter'],
+
+    }
+)
+
+event.shaped(
+    'functionalstorage:configuration_tool', 
+    [ 
+        'UVW',
+        'VXV',
+        'WVU',
+    ],
+    {
+
+    U:['gtceu:lead_single_cable'],
+    V:['gtceu:tin_alloy_plate'],
+    W:['gtceu:vacuum_tube'],
+    X:['#functionalstorage:drawer']
+
+    })
 
 //upgrades
 
