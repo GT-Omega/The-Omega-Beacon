@@ -151,13 +151,14 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //Treated Wood Plank Recipes
+    // Treated Wood Plank Recipes
     event.recipes.thermal.press('gtceu:treated_wood_plate', ['gtceu:treated_wood_dust'])
 
+    // Glass tube
     event.shapeless('2x gtceu:clay_plate', ['#forge:tools/hammers', 'minecraft:clay']).id('omega:shapeless/clay_plate')
     event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/mallets', 'gtceu:clay_plate']).id('omega:shapeless/unfired_ball_cast')
     
-    event.smelting('kubejs:unfired_ball_cast', 'kubejs:fired_ball_cast').id('omega:smelting/fired_ball_cast')
+    event.smelting('kubejs:fired_ball_cast', 'kubejs:unfired_ball_cast').id('omega:smelting/fired_ball_cast')
 
     event.custom({
         "type": 'ae2:transform',
