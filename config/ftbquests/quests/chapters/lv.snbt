@@ -3,9 +3,32 @@
 	default_quest_shape: ""
 	filename: "lv"
 	group: ""
+	hide_quest_details_until_startable: true
+	icon: "gtceu:lv_gas_turbine"
 	id: "6C6EDF42F509CCAE"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
-	title: "LV"
+	quests: [{
+		dependencies: ["54DB30FBD98A2A34"]
+		description: [
+			"The geology of this planet is quite surprising. It seems like, for unknown reasons, a layer of extremely resistant rock formed a few dozen meters deep, preventing anyone from mining deeper. I can't breach that barrier with my current means, but better technology might help."
+			""
+			"Nothing conventional could breach such a strong geological barrier. Quite a disheartening discovery."
+			"But on the other hand, nothing \"conventional\" has happened to me ever since I crashed here. So I might be able to figure something out."
+			"A nuclear warhead would probably do the job, but scans indicate that fissile fuels are all but depleted on the planet's outer crust. Conventional explosives would lack the power of impact, so they aren't even worth considering."
+			"I will ponder the question and return to it later, while trying to build infrastructure in the meantime. "
+		]
+		icon: "minecraft:deepslate"
+		id: "2BE40A148BFDF80A"
+		subtitle: "The Darkness Can't Be Breached"
+		tasks: [{
+			id: "72892B6F1D049881"
+			title: "I need to find another way"
+			type: "checkmark"
+		}]
+		title: "World Origin"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "LV: Empowering"
 }

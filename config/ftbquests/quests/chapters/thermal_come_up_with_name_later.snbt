@@ -3,80 +3,190 @@
 	default_quest_shape: ""
 	filename: "thermal_come_up_with_name_later"
 	group: ""
+	hide_quest_details_until_startable: true
 	icon: "thermal:machine_frame"
 	id: "6902554B26B9C1F4"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["467C926B36AED958"]
+			dependencies: [
+				"500DE85F47AD3457"
+				"55D5A18C68076BB6"
+			]
 			id: "6EA8373A86EE56EB"
 			tasks: [{
 				id: "4BCE6C196502CAEB"
 				item: "gtceu:ulv_machine_hull"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 0.5d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
-			description: ["insert cool description about how to craft tools blah blah blah"]
+			dependencies: ["086DC829AEAD8D96"]
+			description: [
+				"My situation is quite ironic. I am wearing a highly advanced marvel of technology, and yet here I am, having to make and use rudimentary, manual tools, like humanity has barely used in centuries."
+				"Having those on hand shall prove useful in building the tech needed to restore my suit's life support assistance, despite their inefficiency."
+				""
+				"The Powersuit OM-364 was designed for planetary exploration within vastly varying environments, with common modules for protection, combat and movement."
+				"While highly resistant to most environments, it was never meant for industrial use, for which humanity preferred instead the use of construction bots. More precise than human hands ever could be, able to use tools like parts of their own limbs, and to work autonomously to assemble supplied blueprints from raw materials, there was little point in adding such things to the suit as well."
+				"Well, that is, until the bots we brought on this mission burned with my ship."
+			]
 			id: "467C926B36AED958"
-			tasks: [{
-				id: "596F017972512FC8"
-				item: {
-					Count: 1
-					id: "gtceu:hv_sterling_silver_wrench"
-					tag: {
-						Charge: 2147483647L
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							Mode: 2b
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Sometimes, there's just no way around it."
+			tasks: [
+				{
+					id: "596F017972512FC8"
+					item: {
+						Count: 1
+						id: "gtceu:iron_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
 						}
-						GT.Tool: {
-							Damage: 0
-							HarvestLevel: 2
-							MaxDamage: 767
-							ToolSpeed: 13.0f
-						}
-						HideFlags: 2
-						MaxCharge: 2147483647L
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "average gt tools quest lmao"
-			x: -6.0d
-			y: 0.5d
+				{
+					id: "6E632CA5170F6CA9"
+					item: {
+						Count: 1
+						id: "gtceu:iron_file"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D2DBC3C2B71BF28"
+					item: {
+						Count: 1
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7DA88242569CC2E2"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47D0FC56BDDD297B"
+					item: {
+						Count: 1
+						id: "gtceu:iron_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23D4846DB600A281"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Back to the basics"
+			x: -8.5d
+			y: 1.5d
 		}
 		{
-			description: ["all ma homies have power problems"]
-			id: "32073F781F319F3C"
-			tasks: [{
-				id: "573AB0C08754D70D"
-				item: "gtceu:tantalum_capacitor"
-				type: "item"
-			}]
-			title: "power quest"
-			x: -6.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["32073F781F319F3C"]
+			dependencies: ["6EA8373A86EE56EB"]
+			description: [
+				"I do not currently have the necessary means to produce my own power. Thankfully, it seems that some of the structures left behind by whoever lived here before me contain some capacitors with a bit of remaining charge."
+				"It isn't a lot, but it should let me scrape my way to a better power source. I should be able to put together a container for those capacitors that should allow me to extract their remaining charge for my own purposes."
+				""
+				"It seems that the ruined frame-like structures I've been spotting around the cities are the most common place to find capacitors with remaining charge. Makes you wonder what those structures were used for in their prime."
+			]
+			icon: "gtceu:tantalum_capacitor"
 			id: "3EDC10CB6A49D8AD"
-			tasks: [{
-				id: "3A01F938E7B1120C"
-				item: "thermal:dynamo_stirling"
-				type: "item"
-			}]
-			title: "using capacitors"
-			x: -3.5d
-			y: 2.5d
+			subtitle: "It seems that my near future will be defined by scarcity"
+			tasks: [
+				{
+					id: "1577106789938086"
+					item: "gtceu:tantalum_capacitor"
+					type: "item"
+				}
+				{
+					id: "45D6E596DF8714A9"
+					item: "gtceu:ulv_battery_buffer_4x"
+					type: "item"
+				}
+			]
+			title: "Powerless [Devs, we need custom capacitors]"
+			x: -2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"6EA8373A86EE56EB"
 				"3EDC10CB6A49D8AD"
+				"1FBEEF4D54A4FC8D"
+				"59634A09DFA65EB1"
 			]
 			id: "72E6CC33F218BB29"
 			tasks: [{
@@ -136,8 +246,8 @@
 				item: "gtceu:tin_alloy_plate"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["762AD13D307CFF01"]
@@ -149,7 +259,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["72E6CC33F218BB29"]
@@ -187,7 +297,7 @@
 				item: "gtceu:compressed_fireclay"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.5d
 			y: 4.0d
 		}
 		{
@@ -199,7 +309,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -212,8 +322,8 @@
 				item: "kubejs:treated_wood_casing"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.5d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3F8054AAEE2EE89C"]
@@ -223,8 +333,8 @@
 				item: "thermal:device_water_gen"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -2.0d
+			x: 7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3F8054AAEE2EE89C"]
@@ -234,8 +344,8 @@
 				item: "thermal:device_collector"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -4.5d
+			x: 7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3F8054AAEE2EE89C"]
@@ -245,8 +355,8 @@
 				item: "thermal:device_nullifier"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -6.0d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["345866892A28EE70"]
@@ -256,8 +366,8 @@
 				item: "gtceu:wrought_iron_ingot"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 1.5d
+			x: 11.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5403827F2BD5C6DB"]
@@ -269,20 +379,121 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4545A2E4754072D3"]
-			description: ["LV time baybeeeee"]
+			description: [
+				"With the materials I collected and the machinery I've assembled, I should finally be able to fix some of my armor's damaged features."
+				"The tech is rudimentary, so I don't expect any miracles, but I should be able to piece up a simplified version of the old life support module."
+				"In practice, installing this module should allow me to get exhausted at a slower rate, thus needing less food to sustain myself. I would lose out on the benefits given by the extra nutrients, but in my current sitution I might not have the choice to be picky."
+				""
+				"ADDENUM: I found something interesting while trying to adapt the life support module's design. A few simple changes could theoretically allow me to put my body into a form of \"biological overclock\", effectively giving the opposite effects of the life support assistance; I would require more food to survive, but be able to benefit from more of the food's nutrients."
+				"While I theoretically have the materials to make a first prototype now, I should probably wait until I get a more balanced diet before using it. No point eating more if I can't reap the benefits."
+			]
 			id: "1334D98DDBF3575A"
+			subtitle: "Modular systems are great"
 			tasks: [{
 				id: "715F4EA24D549F57"
-				item: "gtceu:lv_machine_hull"
+				item: "functionalstorage:max_storage_upgrade"
+				title: "Food efficiency modules and shit once we have them"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 1.5d
+			title: "Improved Life Support"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1334D98DDBF3575A"]
+			description: [
+				"It all comes back to this signal. It's the reason I approached this system, tried to land on this planet. The reason I lost my ship. Maybe something there is worth checking out."
+				"I should be able to callibrate my suit's map to consider the signal's origin point as [0:0] coordinates. A sort of \"World Origin\", if you will."
+				""
+				"I need to figure out what emits it. I might be able to salvage interesting technology, hijack it to call for help, or, if all else fail, at least figure out why it's here. My training program mentioned how finding a sense of purpose helps coping with dire situations. I guess learning about this planet can be mine."
+				""
+				"The signal seems to come from deep underground. I better prepare my mining tools."
+			]
+			id: "54DB30FBD98A2A34"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Such a powerful signal must come from something important"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "0519A90339302079"
+				ignore_dimension: false
+				position: [I;
+					-50
+					-64
+					-50
+				]
+				size: [I;
+					100
+					5
+					100
+				]
+				title: "Approach the Depths of World Origin"
+				type: "location"
+			}]
+			title: "Seeking Purpose"
+			x: 11.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["467C926B36AED958"]
+			id: "500DE85F47AD3457"
+			tasks: [{
+				id: "669AA869271BA052"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["467C926B36AED958"]
+			id: "55D5A18C68076BB6"
+			tasks: [{
+				id: "468FE327E61074DD"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["467C926B36AED958"]
+			hide_dependency_lines: true
+			icon: "gtceu:glass_tube"
+			id: "1FBEEF4D54A4FC8D"
+			subtitle: "TODO: Add glass shards"
+			tasks: [
+				{
+					id: "40C1CB8F4A9D471C"
+					item: "gtceu:glass_tube"
+					type: "item"
+				}
+				{
+					id: "5A6E8C579B36AF6B"
+					item: "kubejs:fired_ball_cast"
+					type: "item"
+				}
+			]
+			title: "Recycling"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["467C926B36AED958"]
+			hide_dependency_lines: true
+			id: "59634A09DFA65EB1"
+			tasks: [{
+				id: "46A69B103E4C2267"
+				item: "gtceu:magnetic_iron_rod"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
 		}
 	]
-	title: "Thermal (come up with name later)"
+	title: "ULV: Ruins"
 }

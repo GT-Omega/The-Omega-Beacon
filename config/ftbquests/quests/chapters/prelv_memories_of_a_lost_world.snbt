@@ -1,97 +1,129 @@
 {
+	autofocus_id: "16835C793DCA2865"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "prelv_memories_of_a_lost_world"
 	group: ""
+	hide_quest_details_until_startable: true
 	id: "258049605AADE49B"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"[Blah blah welcome message]"
+				"&lSuit Damage Report:"
 				""
-				"[Find lore reason for the hammer]"
+				"- Life Support: &4DESTROYED"
+				"- Weapon System: &4DESTROYED"
+				"- Shock Absorption: &6CRITICAL"
+				"- Environmental Protection: &eDAMAGED"
+				"- Flight System: &4DESTROYED"
+				"- Movement Assistance System: &6CRITICAL"
+				"- Suit Power: &6MINIMAL"
+				"- Internal Processor: &eDAMAGED"
+				"- HUD: &aOPERATIONAL"
+				""
+				"&o&7Pending Notification: Ship log available"
 			]
-			icon: "gtceu:iron_gear"
-			id: "16835C793DCA2865"
+			icon: {
+				Count: 1
+				id: "gtceu:advanced_quarktech_chestplate"
+				tag: { }
+			}
+			id: "60C822AA0BFC988A"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "Diagnostics Complete"
 			tasks: [{
-				id: "6A62C9698484D202"
-				title: "A New Beginning"
+				id: "44203A9146F122AB"
+				title: "Acknowledged"
 				type: "checkmark"
 			}]
+			title: "Powersuit OM-364 Status"
 			x: 0.0d
-			y: 0.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["16835C793DCA2865"]
-			icon: "gtceu:yellow_limonite_ore"
-			id: "37153A9CD14B559E"
-			tasks: [
-				{
-					id: "4CA3DC159247FD19"
-					item: "minecraft:iron_ingot"
-					type: "item"
-				}
-				{
-					id: "6B56F5B6A1F9B50E"
-					item: "minecraft:copper_ingot"
-					type: "item"
-				}
-				{
-					id: "42C02FE0D4C0A6FC"
-					item: "gtceu:tin_ingot"
-					type: "item"
-				}
-				{
-					id: "0655B1EB432F8943"
-					item: "minecraft:coal"
-					type: "item"
-				}
+			dependencies: ["60C822AA0BFC988A"]
+			description: [
+				"[15/09/2774 | 03:35:19]"
+				"Star Tau Ceti within 100AU. Activating sensors."
+				"[15/09/2774 | 04:12:48]"
+				"Sensors picked up an unknown signal. Triangulating source."
+				"[15/09/2774 | 05:18:20]"
+				"Triangulation complete. Signal origin theorized to be Tau Ceti b. Calculating approach vector."
+				"[15/09/2774 | 05:18:21]"
+				"Approach vector calculated. Initiating approach. Estimated time of arrival: 13/09/2774 | 11:47"
+				"[16/09/2774 | 10:52:35]"
+				"Signal origin confirmed to be Tau Ceti b. Stabilizing orbit."
+				"[16/09/2774 | 11:47:56]"
+				"Orbit stabilized. Initiating planetary survey."
+				"[16/09/2774 | 12:05:13]"
+				"Light spectrum analysis indicates significant oxygen presence. Photosynthetic life likely."
+				"[16/09/2774 | 13:21:29]"
+				"Survey completed. Visual scans indicate artificial structures. Further investigation required."
+				"[16/09/2774 | 13:21:29]"
+				"Taking ship crew out of cryostasis. Estimated duration: 12 hours"
+				"[17/09/2774 | 23:21:29]"
+				"Preparing landing course to the signal's point of origin."
+				"[17/09/2774 | 00:38:18]"
+				"Initializing landing sequence. Landing should coincide with end of cryostasis."
+				"{@pagebreak}"
+				"[17/09/2774 | 01:12:54]"
+				"Sensors report collision with unidentified object. Assessing damage."
+				"[17/09/2774 | 01:13:07]"
+				"Thruster damaged beyond repair. Crash now inevitable."
+				"[17/09/2774 | 01:13:21]"
+				"Stasis bay B critically damaged damaged. Pods 25 to 48 lost."
+				"[17/09/2774 | 01:13:59]"
+				"Ship damage critical. Total destruction inevitable. Engaging emergency cryostasis exit."
+				"[17/09/2774 | 01:14:04]"
+				"Stasis bay A damaged. Pods 18 to 20 lost. Ejecting remaining pods."
+				"[17/09/2774 | 01:14:09]"
+				"Stasis pod 21 ejector jammed. Remaining pods ejected successfully."
+				"[17/09/2774 | 01:14:10]"
+				"Sending ship log and survey data to OM-364 powersuits."
+				"[17/09/2774 | 01:14:32]"
+				"Ship data storage lost. Survey upload aborted."
+				"[17/09/2774 | 01:14:57]"
+				"Fuel tank breach detected. Explosion imminent."
+				""
+				"&c--SIGNAL LOST--"
 			]
-			title: "Resources From The Deep"
-			x: -1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["16835C793DCA2865"]
-			icon: "gtceu:steel_ingot"
-			id: "3BEB950475604199"
-			tasks: [
-				{
-					id: "6CA31851DBD76329"
-					item: "gtceu:steel_ingot"
-					type: "item"
-				}
-				{
-					id: "541A00F305AB7344"
-					item: "gtceu:red_alloy_ingot"
-					type: "item"
-				}
-				{
-					id: "4078AB3C3C9437D9"
-					item: "gtceu:lead_ingot"
-					type: "item"
-				}
-			]
-			title: "Resources From The Ruins"
-			x: 1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["16835C793DCA2865"]
-			id: "1ECC23B0EF758B6E"
+			icon: "ae2:wireless_receiver"
+			id: "2724A80462BF82DD"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Last Updated: 5 minutes ago"
 			tasks: [{
-				id: "544304970D94A9C1"
-				item: "gtceu:rubber_sapling"
-				type: "item"
+				id: "0EAA18E4D9FE10AB"
+				title: "Mark as read"
+				type: "checkmark"
 			}]
-			title: "Resources From The Land"
+			title: "Ship Log"
 			x: 0.0d
-			y: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2724A80462BF82DD"]
+			description: [
+				"Falling from the sky in a burning stasis pod is one hell of a way to wake up from a years long slumber. Those situations sure make you appreciate safety procedures, such as wearing your armor when entering cryostasis. There's no way I'd have survived this without mine."
+				""
+				"The OM-364 powersuit is the best wearable tech humanity has to offer. Its clever circuitry and modular design allows the same skeleton to be used for most purposes, with specialized upgrades installed based on individual needs. Most of my own upgrades unfortunately didn't survive the crash."
+				"My current biggest worry is the life support module. The planet's air is thankfully breathable without it, but I'll have to find an actual source of food to sustain myself until I can make a replacement."
+			]
+			icon: "minecraft:bread"
+			id: "086DC829AEAD8D96"
+			subtitle: "This is gonna be a headache."
+			tasks: [{
+				id: "2728BD6A107B2B75"
+				title: "Let's make sure I survive th night."
+				type: "checkmark"
+			}]
+			title: "Just your average Tuesday..."
+			x: 0.0d
+			y: 1.5d
 		}
 	]
-	title: "Pre-LV: Ruins of a Lost World"
+	title: "Prologue: Signal"
 }

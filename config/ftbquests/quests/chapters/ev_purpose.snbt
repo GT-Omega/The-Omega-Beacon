@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ev_purpose"
+	group: ""
+	hide_quest_details_until_startable: true
+	id: "0EFE05B49C6A87A5"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "EV: Purpose"
+}
