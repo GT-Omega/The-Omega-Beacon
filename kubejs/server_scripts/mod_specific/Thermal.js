@@ -109,6 +109,24 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.press('2x gtceu:lead_plate', '3x gtceu:lead_ingot')  
     event.recipes.thermal.press('2x gtceu:steel_plate', '3x gtceu:steel_ingot')
     event.recipes.thermal.press('2x gtceu:iron_plate', '3x gtceu:tin_ingot')
-    event.recipes.thermal.press('2x gtceu:copper_plate', '3x minecraft:ingot_ingot')
     event.recipes.thermal.press('2x gtceu:red_alloy_plate', '3x gtceu:red_alloy_ingot')
+
+    //REPLACE TIME
+    event.replaceInput(
+        { input: 'thermal:press_packing_3x3_die' }, 
+        'thermal:press_packing_3x3_die',           
+        'gtceu:block_casting_mold'         
+      )
+
+    event.replaceInput(
+        { input: 'thermal:press_packing_2x2_die' }, 
+        'thermal:press_packing_2x2_die',           
+        'gtceu:block_casting_mold'         
+      )
+
+    event.replaceInput(
+        { input: 'thermal:press_unpacking_die' }, 
+        'thermal:press_unpacking_die',           
+        'gtceu:ingot_casting_mold'         
+      )
 })

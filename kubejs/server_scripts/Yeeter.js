@@ -35,6 +35,7 @@ Ingredient.of(/thermal:.*(rockwool|rubberwood|cast|coin)/).itemIds.forEach(item 
 Ingredient.of(/thermal:.*augment.*/).itemIds.forEach(item => yeet(item))
 
 Ingredient.of(/gtceu:(lead|red_alloy)_.*cable/).itemIds.forEach(item => removeRecipe(item))
+Ingredient.of(/functionalstorage:,*fluid*/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/gtceu:(lp|hp)_steam.*/).itemIds.forEach(item => yeet(item))
 
 
@@ -83,8 +84,14 @@ const items = [
                     'thermal:aquachow',
                     'thermal:deep_aquachow',
                     'ae2:facade',
-                    'gtceu:steam_miner'
+                    'gtceu:steam_miner',
+                    'gtceu:primitive_blast_furnace',
+                    'thermal:press_gear_die',
+                    'thermal:press_packing_2x2_die',
+                    'thermal:press_packing_3x3_die',
+                    'thermal:press_unpacking_die',
 ]            
+
 const fluids = [
                     'thermal:redstone',
                     'thermal:glowstone',
@@ -104,8 +111,6 @@ const fluids = [
                     'cofh_core:experience',
                     'cofh_core:milk'
 ]
+
 items.forEach(item => yeet(item))
 fluids.forEach(fluid => drain(fluid))
-
-ServerEvents.recipes(event => {
-})

@@ -151,10 +151,14 @@ ServerEvents.recipes(event => {
         }
     )
 
+    // Treated Wood Plank Recipes
+    event.recipes.thermal.press('gtceu:treated_wood_plate', ['gtceu:treated_wood_dust'])
+
+    // Glass tube
     event.shapeless('2x gtceu:clay_plate', ['#forge:tools/hammers', 'minecraft:clay']).id('omega:shapeless/clay_plate')
     event.shapeless('kubejs:unfired_ball_cast', ['#forge:tools/mallets', 'gtceu:clay_plate']).id('omega:shapeless/unfired_ball_cast')
     
-    event.smelting('kubejs:unfired_ball_cast', 'kubejs:fired_ball_cast').id('omega:smelting/fired_ball_cast')
+    event.smelting('kubejs:fired_ball_cast', 'kubejs:unfired_ball_cast').id('omega:smelting/fired_ball_cast')
 
     event.custom({
         "type": 'ae2:transform',
@@ -171,7 +175,7 @@ ServerEvents.recipes(event => {
     //Wrought Iron Processing
     event.remove({ id: 'gtceu:smelting/wrought_iron_nugget' })
     
-    event.recipes.thermal.smelter(['kubejs:hot_wrought_iron_ingot', 'gtceu:small_dark_ash_dust'], ['minecraft:iron_ingot'])
+    event.recipes.thermal.smelter(['kubejs:hot_wrought_iron_ingot', 'gtceu:dark_ash_dust'], ['minecraft:iron_ingot'])
     event.recipes.thermal.press('gtceu:wrought_iron_ingot', ['kubejs:hot_wrought_iron_ingot'])
 
     function naturalRubberCables(element) {
@@ -181,6 +185,18 @@ ServerEvents.recipes(event => {
         event.shapeless(`gtceu:${element}_octal_cable`, [`gtceu:${element}_octal_wire`, 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate'])
         event.shapeless(`gtceu:${element}_hex_cable`, [`gtceu:${element}_hex_wire`, 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate'])
     }
+  
     naturalRubberCables('lead')
     naturalRubberCables('red_alloy')
+
+    //ULV Paper
+    event.custom({
+        "type": 'ae2:transform',
+        "circumstance": { "type": 'fluid', "tag": 'minecraft:water' },
+        "ingredients": [
+          { "item": 'gtceu:wood_dust' }, ],
+        "result": { "count": 1, "item": 'gtceu:paper_dust' }
+    }).id('omega:transformation/paper_dust')
+
+    event.recipes.thermal.press('minecraft:paper', ['gtceu:paper_dust'])
 })

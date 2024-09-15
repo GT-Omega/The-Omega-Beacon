@@ -14,11 +14,11 @@
 /mods/.index
 /mods/memoryleakfix*
 
-/config/fml.toml
-/config/jei/world/local/*
 /kubejs/probe
 /kubejs/config/probejs.json
 
+/config/fml.toml
+/config/jei/world/local/*
 config/forge-client.toml
 config/modernfix-mixins.properties
 config/ftbbackups2.json
@@ -31,6 +31,7 @@ config/embeddium++.toml
 config/embeddium++.toml
 config/emi.css
 /config/**/*client.*
+config/ichunutil/themes
 
 
 ./options.txt
