@@ -70,3 +70,4 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
+config/packetfixer.properties
