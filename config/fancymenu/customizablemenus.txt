@@ -32,3 +32,7 @@ net.minecraft.client.gui.screens.GenericDirtMessageScreen {
 
 net.minecraft.client.gui.screens.ProgressScreen {
 }
+
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
