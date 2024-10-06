@@ -178,6 +178,17 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.smelter(['kubejs:hot_wrought_iron_ingot', 'gtceu:dark_ash_dust'], ['minecraft:iron_ingot'])
     event.recipes.thermal.press('gtceu:wrought_iron_ingot', ['kubejs:hot_wrought_iron_ingot'])
 
+    function naturalRubberCables(element) {
+        event.shapeless(`gtceu:${element}_single_cable`, [`gtceu:${element}_single_wire`, 'gtceu:natural_rubber_plate'])
+        event.shapeless(`gtceu:${element}_double_cable`, [`gtceu:${element}_double_wire`, 'gtceu:natural_rubber_plate'])
+        event.shapeless(`gtceu:${element}_quadruple_cable`, [`gtceu:${element}_quadruple_wire`, 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate'])
+        event.shapeless(`gtceu:${element}_octal_cable`, [`gtceu:${element}_octal_wire`, 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate'])
+        event.shapeless(`gtceu:${element}_hex_cable`, [`gtceu:${element}_hex_wire`, 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate', 'gtceu:natural_rubber_plate'])
+    }
+  
+    naturalRubberCables('lead')
+    naturalRubberCables('red_alloy')
+
     //ULV Paper
     event.custom({
         "type": 'ae2:transform',

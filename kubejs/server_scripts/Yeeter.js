@@ -1,15 +1,20 @@
-// Remove and hide items
-let yeet = (yeeted) => {
+// Remove ONLY the recipe for an item
+let removeRecipe = (removed) => {
     ServerEvents.recipes(event => {
-        event.remove({ output: yeeted })
+        event.remove({ output: removed })
     })
+}
+
+// Hide items from EMI and remove their recipes
+let yeet = (yeeted) => {
+    removeRecipe(yeeted)
     ServerEvents.tags('item', event => {
         event.removeAllTagsFrom(yeeted)
         event.add('c:hidden_from_recipe_viewers', yeeted)
     })
 }
 
-// Remove and hide fluids
+// Hide fluids from EMI and remove their recipes
 let drain = (drained) => {
     ServerEvents.recipes(event => {
         event.remove({ output: Fluid.of(drained) })
@@ -29,9 +34,10 @@ Ingredient.of(/thermal:raw_.*/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*(rockwool|rubberwood|cast|coin)/).itemIds.forEach(item => yeet(item))
 Ingredient.of(/thermal:.*augment.*/).itemIds.forEach(item => yeet(item))
 
+Ingredient.of(/gtceu:(lead|red_alloy)_.*cable/).itemIds.forEach(item => removeRecipe(item))
 Ingredient.of(/functionalstorage:,*fluid*/).itemIds.forEach(item => yeet(item))
-
 Ingredient.of(/gtceu:(lp|hp)_steam.*/).itemIds.forEach(item => yeet(item))
+
 
 const items = [
                     'thermal:machine_sawmill',
@@ -85,6 +91,7 @@ const items = [
                     'thermal:press_packing_3x3_die',
                     'thermal:press_unpacking_die',
 ]            
+
 const fluids = [
                     'thermal:redstone',
                     'thermal:glowstone',
@@ -104,7 +111,6 @@ const fluids = [
                     'cofh_core:experience',
                     'cofh_core:milk'
 ]
+
 items.forEach(item => yeet(item))
 fluids.forEach(fluid => drain(fluid))
-
-
